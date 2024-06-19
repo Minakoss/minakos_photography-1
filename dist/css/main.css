@@ -185,10 +185,11 @@ h4 {
   text-transform: uppercase; }
 
 img {
+  
   width: 100%; }
 
 #logo {
-  width: 70px;
+  width: 108px;
   height: 70px;
   color: #fff;
   text-transform: uppercase; }
@@ -216,7 +217,7 @@ img {
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
-  color: #fff; }
+  color: #24282D; }
   #header-home .header-content {
     text-align: center;
     padding-top: 20%; }
