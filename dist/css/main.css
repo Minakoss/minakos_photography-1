@@ -172,6 +172,10 @@ body {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   background: #fff; }
+  
+  .bio {
+    line-height: 3.6;
+  }
 
 a {
   text-decoration: none;
@@ -219,6 +223,8 @@ img {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #24282D;
+ 
+ 
 
  }
   #header-home .header-content {
@@ -669,7 +675,7 @@ img {
     .container-1 {
       display: flex;
       width: 100%;
-      padding: 4% 2%;
+      padding: 4% 21%;
       box-sizing: border-box;
       height: 100vh;
     }
