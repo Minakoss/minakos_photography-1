@@ -80,6 +80,8 @@ img {
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
     color: #fff;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 
     // Header Content
     .header-content {
