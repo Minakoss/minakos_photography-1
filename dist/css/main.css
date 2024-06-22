@@ -194,10 +194,18 @@ img {
   width: 100%; }
 
 #logo {
-  width: 108px;
+  width: 130px;
   height: 70px;
   color: #fff;
   text-transform: uppercase; }
+  .png-container {
+    overflow: hidden;
+  }
+  
+  .png-container img {  
+    filter: drop-shadow(0px 100px 0 #FFBC00);
+    transform: translateY(-100px);
+  }
 
 #main-nav {
   display: flex;
