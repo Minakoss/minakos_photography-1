@@ -1,5 +1,5 @@
 .container {
-  max-width: 1280px;
+  max-width: 1352px;
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden; }
@@ -18,7 +18,7 @@
 
 .btn-light {
   color: #333;
-  background-color: #f4f4f4; }
+  background-color: #ffffff; }
 
 .btn-dark {
   color: #f4f4f4;
@@ -219,7 +219,7 @@ img {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    border-bottom: 3px transparent solid;
+    border-bottom: 5px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
