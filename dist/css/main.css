@@ -38,7 +38,7 @@ input[class^='btn-']:hover {
   color: #fff; }
 
 .bg-light {
-  background: #f4f4f4;
+  background: #fffff;
   color: #000; }
 
 .bg-medium {
@@ -169,9 +169,11 @@ input[class^='btn-']:hover {
   padding: 0; }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: Verdana,sans-serif;
   line-height: 1.6;
-  background: #fff; }
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.5; }
   
   .bio {
     line-height: 3.6;
@@ -237,6 +239,7 @@ img {
  
 
  }
+ 
   #header-home .header-content {
     text-align: center;
     padding-top: 20%; }
@@ -779,3 +782,22 @@ html { background: black; }
 .span-3 { grid-column-end: span 3; grid-row-end: span 3; min-height: 400px; }
      
 
+.w3-padding-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+.w3-center {
+  text-align: center !important;
+}
+.w3-xlarge {
+  font-size: 16px !important;
+}
+.w3-container, .w3-panel {
+  padding: 0.01em 16px;
+    padding-top: 0.01em;
+    padding-bottom: 0.01em;
+}
+footer {
+  background-color: #F0F0F0;
+}
