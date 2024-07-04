@@ -360,11 +360,11 @@ img {
 
 #about-c .about-logos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 2rem; 
-  opacity: 0.85;}
+  }
   #about-c .about-logos img {
-    width: 40%; }
+    width: 50%; }
 
 #about-d .testimonials {
   display: grid;
