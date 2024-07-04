@@ -361,9 +361,10 @@ img {
 #about-c .about-logos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
+  grid-gap: 2rem; 
+  opacity: 0.85;}
   #about-c .about-logos img {
-    width: 70%; }
+    width: 40%; }
 
 #about-d .testimonials {
   display: grid;
@@ -423,7 +424,8 @@ img {
     display: flex;
     justify-content: space-between;
     height: 5rem;
-    align-items: center; }
+    align-items: center;
+   }
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
@@ -434,6 +436,7 @@ img {
       text-align: center;
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
+        
         background: #ffbc00; }
 
 @media (max-width: 800px) {
@@ -690,7 +693,7 @@ img {
     .container-1 {
       display: flex;
       width: 100%;
-      padding: 4% 21%;
+      padding: 5% 27%;
       box-sizing: border-box;
       height: 60vh;
     }
@@ -907,22 +910,56 @@ footer {
 
 
 div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
+  margin: 13px;
   float: left;
   width: 180px;
+  border-radius: 15px 15px 15px 15px;
+  
+  
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  
+  opacity:0.50
 }
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 218px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
 }
+
+
+
+.img__wrap {
+  position: relative;
+  height: 220px;
+  width: 257px;
+  
+}
+
+.img__description {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  color: black;
+  visibility: hidden;
+  opacity: 0.6;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+.w3-hover-opacity:hover{opacity:0.60}
