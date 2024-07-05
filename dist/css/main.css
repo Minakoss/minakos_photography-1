@@ -5,6 +5,7 @@
   overflow: hidden; }
 
   
+  
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -696,7 +697,12 @@ img {
       padding: 5% 27%;
       box-sizing: border-box;
       height: 60vh;
+      
     }
+    max-width: 1352px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
     
     .box {
       flex: 1;
@@ -745,18 +751,18 @@ img {
   flex-wrap: wrap;
 }
 
-.image01 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-01.jpg'); }
-.image02 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-02.jpg'); }
-.image03 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-03.jpg'); }
-.image04 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-04.jpg'); }
-.image05 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-05.jpg'); }
-.image06 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-06.jpg'); }
-.image07 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-07.jpg'); }
-.image08 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-08.jpg'); }
-.image09 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-09.jpg'); }
-.image10 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-10.jpg'); }
-.image11 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-11.jpg'); }
-.image12 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-12.jpg'); }
+.image01 { background-image: url('/dist/img/color/flash/img01.png'); }
+.image02 { background-image: url('/dist/img/color/flash/img02.png'); }
+.image03 { background-image: url('/dist/img/color/flash/img03.png'); }
+.image04 { background-image: url('/dist/img/color/flash/img04.png'); }
+.image05 { background-image: url('/dist/img/color/flash/img05.png'); }
+.image06 { background-image: url('/dist/img/color/flash/img06.png'); }
+.image07 { background-image: url('/dist/img/color/flash/img07.png'); }
+.image08 { background-image: url('/dist/img/color/flash/img08.png'); }
+.image09 { background-image: url('/dist/img/color/flash/img09.png'); }
+.image10 { background-image: url('/dist/img/color/flash/img10.png'); }
+.image11 { background-image: url('/dist/img/color/flash/img11.png'); }
+.image12 { background-image: url('/dist/img/color/flash/img12.png'); }
 
 @media screen and (max-width: 400px) {
   .image-grid {
@@ -945,12 +951,12 @@ div.desc {
 
 .img__description {
   position:absolute;
-  top: 0;
+  top: 100px;
   bottom: 0;
   left: 0;
   right: 0;
   
-  color: black;
+  color: rgb(213, 187, 187);
   visibility: hidden;
   opacity: 0.6;
 
@@ -958,8 +964,28 @@ div.desc {
   transition: opacity .2s, visibility .2s;
 }
 
+
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
 }
-.w3-hover-opacity:hover{opacity:0.60}
+.img__description-1 {
+  position:absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  color: rgb(0, 0, 0);
+  visibility: hidden;
+  opacity: 0.6;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+
+.img__wrap:hover .img__description-1 {
+  visibility: visible;
+  opacity: 1;
+}
