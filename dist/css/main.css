@@ -927,13 +927,17 @@ div.gallery {
 div.gallery:hover {
   
   opacity:0.50
+  
 }
 
 div.gallery img {
   width: 150%;
   height: 250px;
   border-radius: 15px 15px 15px 15px;
+ 
+  
 }
+
 
 div.desc {
   padding: 15px;
@@ -946,7 +950,13 @@ div.desc {
   position: relative;
   height: 220px;
   width: 257px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
   
+}
+.img__wrap:hover{
+  filter: none;
+  -webkit-filter:grayscale(0);
 }
 
 .img__description {
