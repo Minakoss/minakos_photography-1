@@ -692,11 +692,13 @@ img {
     
 
     .container-1 {
-      display: flex;
-      width: 100%;
+      display:flex;
+      
       padding: 5% 27%;
       box-sizing: border-box;
       height: 60vh;
+     
+ 
       
     }
     max-width: 1352px;
@@ -933,7 +935,7 @@ div.gallery:hover {
 div.gallery img {
   width: 150%;
   height: 250px;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 38px 38px 38px 38px;
  
   
 }
@@ -1000,11 +1002,3 @@ div.desc {
   opacity: 1;
 }
 
-.grid-1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 88px;
-  padding: 35px 17.2rem;
-  grid-auto-flow: dense;
-  
-}
