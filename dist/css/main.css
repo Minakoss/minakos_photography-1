@@ -282,13 +282,13 @@ img {
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
-  height: 100vh;
+  height: 50vh;
   color: #ffbc00;
 }
 
 #header-home .header-content {
   text-align: center;
-  padding-top: 20%;
+  padding-top: 5%;
 }
 #header-home .header-content h1 {
   font-size: 4rem;
