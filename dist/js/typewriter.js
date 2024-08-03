@@ -2,7 +2,7 @@ class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
     this.words = words;
-    this.txt = '';
+    this.txt = "";
     this.wordIndex = 0;
     this.wait = parseInt(wait, 10);
     this.type();
@@ -40,7 +40,7 @@ class TypeWriter {
       typeSpeed = this.wait;
       // Set delete to true
       this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
+    } else if (this.isDeleting && this.txt === "") {
       this.isDeleting = false;
       // Move to next word
       this.wordIndex++;
@@ -53,19 +53,16 @@ class TypeWriter {
 }
 
 // Init On DOM Load
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener("DOMContentLoaded", init);
 
 // Init App
 function init() {
-  const txtElement = document.querySelector('.txt-type');
-  const words = JSON.parse(txtElement.getAttribute('data-words'));
-  const wait = txtElement.getAttribute('data-wait');
+  const txtElement = document.querySelector(".txt-type");
+  const words = JSON.parse(txtElement.getAttribute("data-words"));
+  const wait = txtElement.getAttribute("data-wait");
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
-
-
-
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -74,17 +71,25 @@ var modal = document.getElementById("myModal");
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
+img.onclick = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
-}
+};
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
-} 
+};
 
+/*popup*/
+function openForm() {
+  document.getElementById("myFormbio").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myFormbio").style.display = "none";
+}
