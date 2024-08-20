@@ -1282,10 +1282,11 @@ div.desc {
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  position: absolute;
-  bottom: 150px;
-  right: 360px;
-  width: 280px;
+  position: fixed;
+  bottom: 100px;
+  left: 120px;
+  right: 160px;
+  width: 213px;
 }
 
 /* The popup form - hidden by default */
