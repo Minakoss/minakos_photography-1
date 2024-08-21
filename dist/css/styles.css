@@ -254,13 +254,28 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-
 .features__grid-column {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 4rem;
+  margin-bottom: auto;
+}
+.features__grid-column_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5rem;
+  margin-bottom: auto;
+}
+.features__grid-column_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
   margin-bottom: auto;
 }
 
@@ -269,7 +284,7 @@ img {
   align-items: start;
   justify-content: start;
   text-align: right;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .features__grid-item-text-title {
