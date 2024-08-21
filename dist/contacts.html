@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/favicon.png" />
+    <title>Leno App | Health & Productivity</title>
+  </head>
+  <body>
+    <navbar class="navbar">
+      <div class="navbar__container container">
+        <div class="navbar__logo">
+          <img src="./img/logo.png" alt="Leno" />
+        </div>
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu-item">
+              <a href="index.html" class="navbar__menu-link">Home</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="index.html#features" class="navbar__menu-link"
+                >Features</a
+              >
+            </li>
+            <li class="navbar__menu-item">
+              <a href="index.html#preview" class="navbar__menu-link">Preview</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="index.html#details" class="navbar__menu-link">Details</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="index.html#download" class="navbar__menu-link"
+                >Download</a
+              >
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link--primary">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link--primary">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu & Hamburger Icon -->
+        <div class="navbar__mobile-menu">
+          <div class="navbar__mobile-menu-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <!-- Mobile Menu Items -->
+          <div class="navbar__mobile-menu-items">
+            <ul class="navbar__mobile-menu-list">
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html" class="navbar__mobile-menu-link">Home</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html#features" class="navbar__mobile-menu-link"
+                  >Features</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html#preview" class="navbar__mobile-menu-link"
+                  >Preview</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html#details" class="navbar__mobile-menu-link"
+                  >Details</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html#download" class="navbar__mobile-menu-link"
+                  >Download</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="#" class="navbar__mobile-menu-link--primary">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="#" class="navbar__mobile-menu-link--primary">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </navbar>
+
+    <!-- Inner Header -->
+    <header class="inner-header">
+      <div class="inner-header__container container">
+        <h1 class="inner-header__title">Contact</h1>
+      </div>
+    </header>
+
+    <!-- Pricing -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container_contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="email"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              name="phone"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message"
+            ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <a href="index2.html" class="btn-light">Back</a>
+      </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container_contact">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>john@something.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>(555) 555-5555</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>50 Main st, Boston MA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__about">
+          <h4 class="footer__title">About Leno</h4>
+          <p class="footer__description">
+            Leno is a mobile app that helps you stay focused and improve your
+            productivity. The app provides you with tools to set goals, track
+            your progress, and maintain a healthy work-life balance.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a href="index.html" class="footer__links-link"> Home </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="index.html#testimonials" class="footer__links-link">
+                Testimonials
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="index.html#features" class="footer__links-link">
+                Features
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="index.html#preview" class="footer__links-link">
+                Preview
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="index.html#details" class="footer__links-link">
+                Details
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="index.html#download" class="footer__links-link">
+                Download
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">
+            <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+          <a href="#" class="footer__social-link">
+            <i class="fa-brands fa-twitter fa-3x"></i>
+          </a>
+          <a href="#" class="footer__social-link">
+            <i class="fa-brands fa-instagram fa-3x"></i>
+          </a>
+          <a href="#" class="footer__social-link">
+            <i class="fa-brands fa-linkedin fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
