@@ -957,8 +957,8 @@ img {
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 100px;
+  right: 400px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
