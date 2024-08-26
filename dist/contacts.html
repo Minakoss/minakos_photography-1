@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./images/favicon.png" />
-    <title>Leno App | Health & Productivity</title>
+    <title>Grain Life | The Grain Earth,One Shot At a Time.</title>
   </head>
   <body>
     <navbar class="navbar">
@@ -113,14 +113,17 @@
       <div class="container_contact">
         <h2 class="section-title">Contact Me</h2>
         <div class="bottom-line"></div>
-        <p class="lead">Here is how you can reach me</p>
+        <p class="lead">
+          Have a question? <br />
+          Submit the form below. <br />I'm looking forward to hearing from you!
+        </p>
         <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <div class="text-fields">
             <input
               type="text"
               class="text-input name-input"
-              placeholder="Name"
-              name="name"
+              placeholder="First Name"
+              name="fname"
             />
             <input
               type="text"
@@ -129,16 +132,16 @@
               name="subject"
             />
             <input
-              type="email"
-              class="text-input email-input"
-              placeholder="Email Address"
-              name="email"
+              type="text"
+              class="text-input lname-input"
+              placeholder="Last Name"
+              name="lname"
             />
             <input
               type="text"
               class="text-input phone-input"
-              placeholder="Phone Number"
-              name="phone"
+              placeholder="Email Address"
+              name="email"
             />
             <textarea
               class="text-input message-input"
@@ -147,6 +150,25 @@
             ></textarea>
             <div class="my-2">
               <div data-netlify-recaptcha="true"></div>
+            </div>
+
+            <label for="Ctl_Survey_2737">How did you hear about Olga?</label>
+            <div class="form_input">
+              <select
+                name="CtlSurvey2737"
+                id="Ctl_Survey_2737"
+                style="width: 100%"
+                class="validate[maxSize[2000]]"
+              >
+                <option value="">==Please select==</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Search Engine">Search Engine</option>
+                <option value="Maps">Maps</option>
+                <option value="Family and/or Friend">
+                  Family and/or Friend
+                </option>
+                <option value="Other">Other</option>
+              </select>
             </div>
           </div>
         </form>
