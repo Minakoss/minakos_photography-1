@@ -117,7 +117,12 @@
           Have a question? <br />
           Submit the form below. <br />I'm looking forward to hearing from you!
         </p>
-        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="53eb1724-9fcc-4b94-b78b-01c0318bdde8"
+          />
           <div class="text-fields">
             <input
               type="text"
@@ -148,6 +153,9 @@
               placeholder="Enter Message"
               name="message"
             ></textarea>
+            <button class="details__grid-button btn" type="submit">
+              Submit
+            </button>
             <div class="my-2">
               <div data-netlify-recaptcha="true"></div>
             </div>
@@ -175,6 +183,7 @@
       </div>
 
       <div>
+        <br />
         <a href="index.html" class="details__grid-button btn">Back</a>
       </div>
     </section>
