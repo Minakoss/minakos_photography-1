@@ -1178,8 +1178,6 @@ html {
 /*hover zoom*/
 
 .zoom {
-  padding: 50px;
-  background-color: green;
   transition: transform 0.2s; /* Animation */
   width: 200px;
   height: 200px;
