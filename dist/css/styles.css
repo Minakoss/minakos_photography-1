@@ -1025,7 +1025,7 @@ img {
   padding: 3rem 0;
 }
 .container_contact {
-  max-width: 500px;
+  max-width: 530px;
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
@@ -1178,10 +1178,11 @@ html {
 /*hover zoom*/
 
 .zoom {
-  transition: transform 0.2s; /* Animation */
-  width: 200px;
-  height: 200px;
+  transition: transform 0.3s; /* Animation */
+  width: 100%;
+  height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .zoom:hover {
