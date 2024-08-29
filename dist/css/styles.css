@@ -907,6 +907,7 @@ img {
   -webkit-filter: blur(4px); /* Chrome, Safari, Opera */
   filter: blur(4px);
 }
+
 .imgongrid {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
