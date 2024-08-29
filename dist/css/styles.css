@@ -991,7 +991,7 @@ img {
 /*Contact form*/
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: "name email" "lname" "subject phone" "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -1013,6 +1013,8 @@ img {
 }
 #contact-a .text-fields .text-input {
   padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #b5b2c0;
 }
 
 #contact-a button[type="submit"] {
@@ -1025,8 +1027,8 @@ img {
   padding: 3rem 0;
 }
 .container_contact {
-  max-width: 530px;
-  padding: 0 1.5rem;
+  max-width: 700px;
+  padding: 0 1.3rem;
   margin: auto;
   overflow: hidden;
 }
@@ -1193,4 +1195,8 @@ html {
 
 .ctr {
   margin-top: 240px;
+}
+
+.details__grid-buttonsub {
+  margin-right: 20px;
 }
