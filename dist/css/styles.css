@@ -15,6 +15,7 @@
 html,
 body {
   font-family: "Open Sans", sans-serif;
+
   background: var(--secondary-color);
   color: #fff;
   line-height: 1.6;
@@ -1197,7 +1198,14 @@ html {
 .ctr {
   margin-top: 240px;
 }
-
+/* button submit in contact form */
 .details__grid-buttonsub {
   margin-right: 20px;
+}
+/* fonts */
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
 }
