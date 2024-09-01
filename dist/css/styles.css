@@ -342,7 +342,7 @@ img {
 /* Play Button Container */
 .preview__video-play-button {
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 10;
@@ -364,8 +364,8 @@ img {
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   background: #ffbc00;
-  height: 4.375rem;
-  width: 4.375rem;
+  height: 3.375rem;
+  width: 3.375rem;
   border-radius: 50%;
   display: block;
   transition: all 200ms;
