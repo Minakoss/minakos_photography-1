@@ -314,7 +314,7 @@ img {
 }
 
 .preview__container {
-  padding: 6rem 2rem;
+  padding: 0.2rem 2rem;
   text-align: center;
 }
 
@@ -335,8 +335,8 @@ img {
 
 .preview__video-wrapper img {
   width: 100%;
-  max-width: 900px;
-  border-radius: 10px;
+  max-width: 600px;
+  border-radius: 15px;
 }
 
 /* Play Button Container */
