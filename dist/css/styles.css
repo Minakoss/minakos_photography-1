@@ -1064,6 +1064,7 @@ img {
 #contact-a .text-fields .name-input {
   grid-area: name;
 }
+
 #contact-a .text-fields .subject-input {
   grid-area: subject;
 }
@@ -1202,7 +1203,7 @@ html {
 }
 /* button submit in contact form */
 .details__grid-buttonsub {
-  margin-right: 20px;
+  margin-right: 3px;
 }
 /* fonts */
 .sevillana-regular {
