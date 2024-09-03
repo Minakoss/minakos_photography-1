@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   videoButton.addEventListener("click", function () {
     // Show modal
     modal.style.display = "block";
+    videoButton.style.display = "none";
 
     //Replace the src attribute with the video URL
     videoPlayer.src =
