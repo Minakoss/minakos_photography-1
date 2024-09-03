@@ -144,7 +144,7 @@ img {
 
 /* Hero */
 .hero {
-  background: #000 url("../images/header-background.jpg") center center/cover
+  background: #0d0d0d url("../images/header-background.jpg") center center/cover
     no-repeat;
   padding: 11.5rem 2rem 8rem;
 }
@@ -580,8 +580,8 @@ img {
 
 /* Footer */
 .footer {
-  background: #000 url("../images/download-background.jpg") center center/cover
-    no-repeat;
+  background: #0d0d0d url("../images/download-background.jpg") center
+    center/cover no-repeat;
   padding: 11.5rem 2rem 8rem;
   color: #9f9caf;
   padding: 4rem 2rem;
@@ -620,7 +620,7 @@ img {
 
 /* Inner Header */
 .inner-header {
-  background: #000 url("../images/header-background.jpg") center center/cover
+  background: #0d0d0d url("../images/header-background.jpg") center center/cover
     no-repeat;
   padding: 10rem 2rem 6rem;
 }
