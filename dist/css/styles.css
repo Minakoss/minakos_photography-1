@@ -203,23 +203,29 @@ img {
   text-align: center;
 }
 
-.testimonials__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonials__card {
-  padding: 0 3rem;
-}
-
 .testimonials__card-text {
   font-style: italic;
   margin-bottom: 1.5rem;
 }
 
+.testimonials__container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+  gap: 16px; /* Adjust spacing between items as needed */
+}
+
+.testimonials__card {
+  flex: 1 1 calc(25% - 16px); /* Adjust the percentage based on how many images you want per row */
+  max-width: calc(
+    25% - 16px
+  ); /* Ensure that images don’t exceed container width */
+  box-sizing: border-box; /* Includes padding and border in element’s total width and height */
+}
+
+.photo img {
+  width: 100%;
+  height: auto; /* Keeps image aspect ratio */
+}
 /* Features */
 .features {
   background-color: var(--tertiary-color);
