@@ -188,22 +188,3 @@ function changeImage(direction) {
   var modalImg = document.getElementById("modalImage");
   modalImg.src = images[currentImageIndex];
 }
-
-//appear one by one text
-
-document.addEventListener("DOMContentLoaded", function () {
-  const element = document.querySelector(".text");
-  const text = element.textContent;
-  let index = 0;
-
-  element.textContent = "";
-
-  function type() {
-    if (index < text.length) {
-      element.textContent += text[index++];
-      setTimeout(type, 50); // Adjust the speed as needed
-    }
-  }
-
-  type();
-});
