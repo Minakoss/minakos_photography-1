@@ -1247,7 +1247,7 @@ html {
 .photo:hover .overlay {
   opacity: 1;
 }
-
+/* video modal close button */
 .modal__close-button {
   display: none; /* Hide the close button by default */
 }
