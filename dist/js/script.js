@@ -7,35 +7,40 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle("active");
   });
 
-  // Video Modal
+  // Get modal elements
   const modal = document.getElementById("videoModal");
   const videoButton = document.querySelector(".preview__video-button");
   const closeButton = document.querySelector(".modal__close-button");
   const videoPlayer = document.getElementById("videoPlayer");
 
-  // Open modal when clicked
-  videoButton.addEventListener("click", function () {
-    // Show modal
+  // Function to open the modal
+  function openModal() {
     modal.style.display = "block";
-    videoButton.style.display = "none";
-
-    //Replace the src attribute with the video URL
+    closeButton.style.display = "block"; // Show the close button when the modal is open
+    videoButton.style.display = "none"; // Hide the video button
     videoPlayer.src =
-      "https://www.youtube.com/embed/K87PxC8avvI?si=G7EcPkjVkgBo05-D";
+      "https://www.youtube.com/embed/K87PxC8avvI?si=G7EcPkjVkgBo05-D"; // Set the video source
+  }
 
-    // Close modal on close button click
-    closeButton.addEventListener("click", function () {
-      modal.style.display = "none";
-      videoPlayer.src = "";
-    });
+  // Function to close the modal
+  function closeModal() {
+    modal.style.display = "none";
+    videoButton.style.display = "block"; // Show the video button again when the modal is closed
+    closeButton.style.display = "none"; // Hide the close button when the modal is closed
+    videoPlayer.src = ""; // Stop the video by resetting the src attribute
+  }
 
-    // Close modal on outter click
-    window.addEventListener("click", function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-        videoPlayer.src = "";
-      }
-    });
+  // Open modal when the video button is clicked
+  videoButton.addEventListener("click", openModal);
+
+  // Close modal when the close button is clicked
+  closeButton.addEventListener("click", closeModal);
+
+  // Close modal when clicking outside of the modal content
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
   });
 });
 
