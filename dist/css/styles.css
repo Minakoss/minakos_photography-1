@@ -1387,3 +1387,30 @@ html {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+.text {
+  display: inline;
+  overflow: hidden; /* Ensures text doesn't overflow the container */
+  white-space: nowrap; /* Keeps the text in a single line */
+  border-right: 0.15em solid orange; /* Cursor-like effect */
+  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
