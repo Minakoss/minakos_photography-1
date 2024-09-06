@@ -135,15 +135,35 @@
       </div>
     </header>
     <section class="testimonials" id="testimonials">
+      <div class="features__title">
+        <h3>Istagram</h3>
+      </div>
+      <p class="features__description">
+        Capturing moments <br />
+
+        <span class="social-icon">
+          <a href="https://www.instagram.com/non_papast/" target="_blank"
+            ><i class="fa-brands fa-instagram" aria-hidden="true"></i></a
+        ></span>
+      </p>
+      <br />
       <div class="testimonials__container container">
         <div class="testimonials__card">
           <div class="photo">
-            <img src="./img/instagram/photo1.png" alt="" />
+            <img src="./img/instagram/photo1.png " alt="" />
 
             <div class="overlay">
               <div class="overlay-content">
                 <span><i class="fa fa-heart"></i> 126</span>
                 <span><i class="fa fa-comment"></i> 0</span>
+                <br />
+                <span>
+                  <h6>
+                    📷 . . . . . . #summer2024 #august #greeksummer
+                    #loves_greece #kings_greece #super_greece #team_greece
+                    #greekislands @chalkida_evia @iconic_evia
+                  </h6>
+                </span>
               </div>
             </div>
           </div>
@@ -157,6 +177,14 @@
               <div class="overlay-content">
                 <span><i class="fa fa-heart"></i> 210</span>
                 <span><i class="fa fa-comment"></i> 7</span>
+                <br />
+                <span>
+                  <h6>
+                    📷 . . . . . . #summer2024 #august #greeksummer
+                    #loves_greece #kings_greece #super_greece #team_greece
+                    #greekislands @folegandros_official @folegandros_island
+                  </h6>
+                </span>
               </div>
             </div>
           </div>
@@ -170,6 +198,16 @@
               <div class="overlay-content">
                 <span><i class="fa fa-heart"></i> 207</span>
                 <span><i class="fa fa-comment"></i> 0</span>
+                <br />
+                <span>
+                  <h6>
+                    📷 . . . . . . #loves_greece #kings_greece #super_greece
+                    #team_greece #greekislands #instamoments #travelphotography
+                    #tv_greece_ #wonderful_places <br />@paxos_island_greece
+                    <br />
+                    @paxos_antipaxos
+                  </h6>
+                </span>
               </div>
             </div>
           </div>
@@ -195,17 +233,16 @@
               <!-- Grid Item 1 -->
               <div class="features__grid-item">
                 <div class="features__grid-item-text sevillana-regular">
-                  Analogue B&W photography
                   <p class="features__grid-item-text-description">
                     <a href="index.html#analogueb&w">
-                      <img
-                        id="myImg2"
-                        src="./img/collection/analogue.png"
-                        alt=""
-                        width="345"
-                        height="340"
-                        style="border-radius: 10px"
-                      />
+                      <div class="image-container">
+                        <img
+                          src="./img/collection/analogue.png"
+                          alt="Sample Image"
+                          class="hover-image"
+                        />
+                        <div class="overlay-text">Analogue B&W photography</div>
+                      </div>
                     </a>
                   </p>
                 </div>
@@ -216,16 +253,17 @@
                 <div class="features__grid-item">
                   <div class="features__grid-item-text sevillana-regular">
                     <p class="features__grid-item-text-description">
-                      Analogue Color Photography
                       <a href="index.html#analoguecolor">
-                        <img
-                          id="myImg2"
-                          src="./img/collection/analog_photo2.png"
-                          alt=""
-                          width="345"
-                          height="340"
-                          style="border-radius: 10px"
-                        />
+                        <div class="image-container">
+                          <img
+                            src="./img/collection/analog_photo2.png"
+                            alt="Sample Image"
+                            class="hover-image"
+                          />
+                          <div class="overlay-text">
+                            Analogue Color Photography
+                          </div>
+                        </div>
                       </a>
                     </p>
                   </div>
@@ -239,17 +277,16 @@
               <!-- Grid Item 1 -->
               <div class="features__grid-item">
                 <div class="features__grid-item-text sevillana-regular">
-                  Digital Photography
                   <p class="features__grid-item-text-description">
                     <a href="index.html#digital">
-                      <img
-                        id="myImg2"
-                        src="./img/collection/digital.png"
-                        alt=""
-                        width="345"
-                        height="340"
-                        style="border-radius: 10px"
-                      />
+                      <div class="image-container">
+                        <img
+                          src="./img/collection/digital.png"
+                          alt="Sample Image"
+                          class="hover-image"
+                        />
+                        <div class="overlay-text">Digital Photography</div>
+                      </div>
                     </a>
                   </p>
                 </div>
@@ -257,16 +294,15 @@
               <!-- Grid Item 2 -->
               <div class="features__grid-item">
                 <div class="features__grid-item-text sevillana-regular">
-                  Super 8mm
                   <a href="index.html#film">
-                    <img
-                      id="myImg2"
-                      src="./img/collection/anal_photo1.png"
-                      alt=""
-                      width="345"
-                      height="340"
-                      style="border-radius: 10px"
-                    />
+                    <div class="image-container">
+                      <img
+                        src="./img/collection/anal_photo1.png"
+                        alt="Sample Image"
+                        class="hover-image"
+                      />
+                      <div class="overlay-text">Super 8mm</div>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -345,6 +381,7 @@
           <div class="grid">
             <div
               class="card span-1 c-2 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/b&w/122181781_1061164680979860_823354598767023207_n.jpg);
               "
@@ -352,58 +389,68 @@
 
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/b&w/133339127_1031607110678651_5816192402275967761_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/b&w/133545826_866609470769198_3475780533205467259_n.jpg);
               "
             ></div>
             <div
               class="card span-2 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/b&w/30948659_432152653874890_859884274071896064_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-3 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/b&w/32010193_2047291575492661_5796031926133325824_n.jpg);
               "
             ></div>
             <div
               class="card span-3 c-4 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/b&w/32964898_1981389098600177_1404336700997500928_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-4 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/b&w/36849405_1819982331384132_7522088177549443072_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/b&w/39200015_550049498786832_8397873008961650688_n.jpg);
               "
             ></div>
             <div
               class="card span-2 c-3 zoom"
+              onclick="openModal(this)"
               style="background-image: url(./img/b&w/IMG_7603.JPG)"
               style="width: 50%"
             ></div>
             <div
               class="card span-1 c-4 zoom"
+              onclick="openModal(this)"
               style="background-image: url(./img/b&w/IMG_7605.JPG)"
               style="width: 50%"
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="background-image: url(./img/b&w/IMG_7606.JPG)"
               style="width: 50%"
             ></div>
@@ -414,22 +461,26 @@
             ></div>
             <div
               class="card span-1 c-2 zoom"
+              onclick="openModal(this)"
               style="background-image: url(./img/b&w/IMG_7608.JPG)"
               style="width: 50%"
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="background-image: url(./img/b&w/IMG_7611.JPG)"
               style="width: 50%"
             ></div>
 
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="background-image: url(./img/b&w/IMG_7612.JPG)"
               style="width: 50%"
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="background-image: url(./img/b&w/IMG_7635.JPG)"
               style="width: 50%"
             ></div>
@@ -438,6 +489,14 @@
       </div>
     </section>
 
+    <!-- Modal to display enlarged image -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+    </div>
     <!-- Analogue color -->
     <section class="details" id="analoguecolor">
       <div class="features__container container">
@@ -455,96 +514,112 @@
           <div class="grid">
             <div
               class="card span-1 c-2 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/169877288_131072482261359_2291723625001723297_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/171785253_247743310370740_7047732513648898554_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/172977262_441707866927865_1322897091469485667_n.jpg);
               "
             ></div>
             <div
               class="card span-2 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/173431587_1112670379235404_6627620817484437636_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-3 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/241469108_536522624300535_6357723685836076428_n.jpg);
               "
             ></div>
             <div
               class="card span-3 c-4 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/241854069_580518699665030_7573230737301191919_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-4 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/242032208_382287626851136_8609566230460559717_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/269511683_297276412461898_1233125859993285862_n.jpg);
               "
             ></div>
             <div
               class="card span-2 c-3 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/271800214_507407914341380_7168908432879764338_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-4 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/272047023_1189215254942950_8457259584015085900_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/272963214_1113133712821017_2723613785512325144_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-2 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/278493216_548966656652193_1041900794736914528_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-2 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/278559275_1063470967592209_3754434566234043746_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/278746434_1045297529722747_7983809000255612360_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/SaveClip.App_314602111_1122279238660309_6359772216347227861_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/analogue_color/SaveClip.App_319289095_1345106066239756_6538934435290229212_n.jpg);
               "
@@ -569,96 +644,112 @@
           <div class="grid">
             <div
               class="card span-1 c-2 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/117680476_117322626551813_4682776027544656203_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/33374939_613021399048539_2776309487684812800_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/42004057_299695743950354_7893764325896394356_n.jpg);
               "
             ></div>
             <div
               class="card span-2 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/42772951_376597162896202_7326272440105348515_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-3 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/43681772_2713927268633304_4149138891247324678_n.jpg);
               "
             ></div>
             <div
               class="card span-3 c-4 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/46358390_439312096602277_8259272730942790196_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-4 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/49515987_537353346762038_9140528450903399634_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-1 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/50128968_348155632442427_3993356426416657915_n.jpg);
               "
             ></div>
             <div
               class="card span-2 c-3 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/50230797_244394846476679_6890355171752706645_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-4 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/50247600_528796220944180_928650572352519223_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/52678129_151862899173874_3546436482621765232_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-2 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/52948804_1225245187641299_6723683709856603390_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-2 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/64786252_123686112191920_3304190673740622821_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/69638202_1721155238028713_1265254828848458149_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/74797537_3108884012462314_4166571074441185509_n.jpg);
               "
             ></div>
             <div
               class="card span-1 c-5 zoom"
+              onclick="openModal(this)"
               style="
                 background-image: url(./img/digital/SaveClip.App_376228279_1278453712812110_1909975669335326188_n.jpg);
               "
@@ -779,6 +870,13 @@
             class="footer__social-link"
           >
             <i class="fa-brands fa-youtube fa-3x"></i>
+          </a>
+          <a
+            href="https://www.istockphoto.com/portfolio/nontaspapastefanis?assettype=image&mediatype=photography&sort=mostpopular"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fas fa-camera" style="font-size: 39px"></i>
           </a>
         </div>
       </div>

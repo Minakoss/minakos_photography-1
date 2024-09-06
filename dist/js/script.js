@@ -125,3 +125,66 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.classList.remove("show");
   });
 });
+
+// Function to open the modal and display the clicked image
+
+var currentImageIndex = 0; // Track the index of the current image
+var images = []; // Store image URLs
+
+// Function to open the modal
+function openModal(element) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  var captionText = document.getElementById("caption");
+
+  // Populate images array based on the background-image URLs
+  images = Array.from(document.querySelectorAll(".card")).map((card) =>
+    card.style.backgroundImage.replace('url("', "").replace('")', "")
+  );
+
+  currentImageIndex = images.indexOf(
+    element.style.backgroundImage.replace('url("', "").replace('")', "")
+  );
+
+  modal.style.display = "block";
+  modalImg.src = images[currentImageIndex];
+  captionText.innerHTML = ""; // Clear caption text to hide filename
+
+  // Add event listener for key presses
+  document.addEventListener("keydown", handleKeyPress);
+}
+
+// Function to close the modal
+function closeModal() {
+  var modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+
+  // Remove event listener for key presses
+  document.removeEventListener("keydown", handleKeyPress);
+}
+
+// Function to handle key press events
+function handleKeyPress(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  } else if (event.key === "ArrowRight") {
+    changeImage(1); // Next image
+  } else if (event.key === "ArrowLeft") {
+    changeImage(-1); // Previous image
+  }
+}
+
+// Function to change the image in the modal
+function changeImage(direction) {
+  currentImageIndex += direction;
+
+  // Loop around the images array
+  if (currentImageIndex >= images.length) {
+    currentImageIndex = 0;
+  } else if (currentImageIndex < 0) {
+    currentImageIndex = images.length - 1;
+  }
+
+  var modalImg = document.getElementById("modalImage");
+  modalImg.src = images[currentImageIndex];
+}
