@@ -226,6 +226,34 @@ img {
   width: 100%;
   height: auto; /* Keeps image aspect ratio */
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Adjusts card size for tablets */
+  .testimonials__card {
+    flex: 1 1 calc(50% - 16px); /* Two cards per row on tablets */
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjusts card size for mobile */
+  .testimonials__card {
+    flex: 1 1 100%; /* One card per row on mobile */
+    max-width: 100%;
+  }
+
+  /* Hide overlay on mobile */
+  .overlay {
+    display: none;
+  }
+
+  /* Optional: Reduce padding for smaller screens */
+  .testimonials {
+    padding: 2rem 1rem;
+  }
+}
+
 /* Features */
 .features {
   background-color: var(--tertiary-color);
