@@ -188,3 +188,20 @@ function changeImage(direction) {
   var modalImg = document.getElementById("modalImage");
   modalImg.src = images[currentImageIndex];
 }
+
+var modal = document.getElementById("privacyPolicyModal");
+var span = document.getElementsByClassName("close")[0];
+
+function showPrivacyPolicy() {
+  modal.style.display = "block";
+}
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
