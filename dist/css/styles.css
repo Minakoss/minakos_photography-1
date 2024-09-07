@@ -1019,49 +1019,15 @@ img {
 }
 
 /*Contact form*/
-#contact-a .text-fields {
-  display: grid;
-  grid-template-areas: "name email" "lname" "subject phone" "message message";
-  grid-gap: 1.2rem;
-  margin-bottom: 1.2rem;
-}
-#contact-a .text-fields .name-input {
-  grid-area: name;
-}
-#contact-a .text-fields .subject-input {
-  grid-area: subject;
-}
-#contact-a .text-fields .email-input {
-  grid-area: email;
-}
-#contact-a .text-fields .phone-input {
-  grid-area: phone;
-}
-#contact-a .text-fields .message-input {
-  grid-area: message;
-  height: 100px;
-}
-#contact-a .text-fields .text-input {
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  background-color: #b5b2c0;
-}
-
-#contact-a button[type="submit"] {
-  width: 50%;
-}
-.text-center {
-  text-align: center;
-}
-.py-3 {
-  padding: 3rem 0;
-}
+/* Main Container */
 .container_contact {
   max-width: 700px;
   padding: 0 1.3rem;
   margin: auto;
   overflow: hidden;
 }
+
+/* Section title styling */
 .section-title {
   font-size: 2rem;
   display: block;
@@ -1070,6 +1036,8 @@ img {
   font-weight: 100;
   text-transform: uppercase;
 }
+
+/* Bottom line under the title */
 .bottom-line {
   height: 2px;
   width: 3rem;
@@ -1077,20 +1045,25 @@ img {
   display: block;
   margin: 0 auto 1rem auto;
 }
+
+/* Lead text (subheading) styling */
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
+
+/* Text input and form fields */
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem;
 }
+
+/* Individual input field positioning using CSS grid areas */
 #contact-a .text-fields .name-input {
   grid-area: name;
 }
-
 #contact-a .text-fields .subject-input {
   grid-area: subject;
 }
@@ -1104,23 +1077,90 @@ img {
   grid-area: message;
   height: 100px;
 }
+
+/* General input field styling */
 #contact-a .text-fields .text-input {
   padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #b5b2c0;
 }
 
+/* Submit button styling */
 #contact-a button[type="submit"] {
   width: 50%;
+  margin: auto;
+  display: block;
 }
 
+/* Centering text */
+.text-center {
+  text-align: center;
+}
+
+/* Padding utility class */
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* Contact info section styling */
 #contact-b .contact-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
 }
 
+/* Section heading */
 #contact-c h1 {
   text-align: center;
   font-size: 4rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  #contact-a .text-fields {
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "phone"
+      "message"; /* Stack the fields vertically on smaller devices */
+  }
+  #contact-a button[type="submit"] {
+    width: 100%; /* Make the submit button full-width */
+  }
+  .lead {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  #contact-a .text-fields {
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "phone"
+      "message"; /* Stack vertically for mobile */
+  }
+
+  /* Reduce padding and font sizes for better fit */
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  #contact-a .text-fields .text-input {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  #contact-a button[type="submit"] {
+    width: 100%; /* Full width button on mobile */
+    font-size: 1rem;
+    padding: 0.8rem 0;
+  }
 }
 
 /*image grid and text*/
