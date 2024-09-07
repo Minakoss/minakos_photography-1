@@ -7,39 +7,66 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle("active");
   });
 
-  // Get modal elements
-  const modal = document.getElementById("videoModal");
-  const videoButton = document.querySelector(".preview__video-button");
-  const closeButton = document.querySelector(".modal__close-button");
-  const videoPlayer = document.getElementById("videoPlayer");
+  // Get modal elements for the left video
+  const modalLeft = document.getElementById("videoModalLeft");
+  const videoButtonLeft = document.getElementById("videoButtonLeft");
+  const closeButtonLeft = document.getElementById("closeButtonLeft");
+  const videoPlayerLeft = document.getElementById("videoPlayerLeft");
 
-  // Function to open the modal
-  function openModal() {
-    modal.style.display = "block";
-    closeButton.style.display = "block"; // Show the close button when the modal is open
-    videoButton.style.display = "none"; // Hide the video button
-    videoPlayer.src =
-      "https://www.youtube.com/embed/K87PxC8avvI?si=G7EcPkjVkgBo05-D"; // Set the video source
+  // Get modal elements for the right video
+  const modalRight = document.getElementById("videoModalRight");
+  const videoButtonRight = document.getElementById("videoButtonRight");
+  const closeButtonRight = document.getElementById("closeButtonRight");
+  const videoPlayerRight = document.getElementById("videoPlayerRight");
+
+  // Function to open the left video modal
+  function openModalLeft() {
+    modalLeft.style.display = "block";
+    closeButtonLeft.style.display = "block";
+    videoButtonLeft.style.display = "none";
+    videoPlayerLeft.src =
+      "https://www.youtube.com/embed/K87PxC8avvI?si=G7EcPkjVkgBo05-D"; // Left video source
   }
 
-  // Function to close the modal
-  function closeModal() {
-    modal.style.display = "none";
-    videoButton.style.display = "block"; // Show the video button again when the modal is closed
-    closeButton.style.display = "none"; // Hide the close button when the modal is closed
-    videoPlayer.src = ""; // Stop the video by resetting the src attribute
+  // Function to close the left video modal
+  function closeModalLeft() {
+    modalLeft.style.display = "none";
+    videoButtonLeft.style.display = "block";
+    closeButtonLeft.style.display = "none";
+    videoPlayerLeft.src = ""; // Stop the video by resetting the src attribute
   }
 
-  // Open modal when the video button is clicked
-  videoButton.addEventListener("click", openModal);
+  // Open left modal when the video button is clicked
+  videoButtonLeft.addEventListener("click", openModalLeft);
+  closeButtonLeft.addEventListener("click", closeModalLeft);
 
-  // Close modal when the close button is clicked
-  closeButton.addEventListener("click", closeModal);
+  // Function to open the right video modal
+  function openModalRight() {
+    modalRight.style.display = "block";
+    closeButtonRight.style.display = "block";
+    videoButtonRight.style.display = "none";
+    videoPlayerRight.src = "https://youtu.be/C2pKnWJqqcc?si=jXoc6HxkIrmSm8qP"; // Right video source
+  }
 
-  // Close modal when clicking outside of the modal content
+  // Function to close the right video modal
+  function closeModalRight() {
+    modalRight.style.display = "none";
+    videoButtonRight.style.display = "block";
+    closeButtonRight.style.display = "none";
+    videoPlayerRight.src = ""; // Stop the video by resetting the src attribute
+  }
+
+  // Open right modal when the video button is clicked
+  videoButtonRight.addEventListener("click", openModalRight);
+  closeButtonRight.addEventListener("click", closeModalRight);
+
+  // Close modals when clicking outside of the modal content
   window.addEventListener("click", function (event) {
-    if (event.target === modal) {
-      closeModal();
+    if (event.target === modalLeft) {
+      closeModalLeft();
+    }
+    if (event.target === modalRight) {
+      closeModalRight();
     }
   });
 });
