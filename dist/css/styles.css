@@ -1416,7 +1416,7 @@ html {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal {
+.modal_policy {
   display: none;
   position: fixed;
   z-index: 1;
@@ -1428,7 +1428,7 @@ html {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.modal-content {
+.modal_policy-content {
   background-color: #fff;
   margin: auto;
   padding: 20px;

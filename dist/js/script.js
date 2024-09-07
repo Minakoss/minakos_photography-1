@@ -189,19 +189,33 @@ function changeImage(direction) {
   modalImg.src = images[currentImageIndex];
 }
 
+//privacy modal
 var modal = document.getElementById("privacyPolicyModal");
 var span = document.getElementsByClassName("close")[0];
 
+// Function to show the Privacy Policy modal
 function showPrivacyPolicy() {
   modal.style.display = "block";
 }
 
+// Close the modal when the 'x' button is clicked
 span.onclick = function () {
   modal.style.display = "none";
+  localStorage.setItem("privacyPolicyAccepted", "true");
 };
 
+// Close the modal if the user clicks outside of it
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    localStorage.setItem("privacyPolicyAccepted", "true");
+  }
+};
+
+// Check if the user has already seen the modal
+window.onload = function () {
+  var accepted = localStorage.getItem("privacyPolicyAccepted");
+  if (!accepted) {
+    showPrivacyPolicy(); // Show the modal if not previously accepted
   }
 };
