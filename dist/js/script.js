@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     modalRight.style.display = "block";
     closeButtonRight.style.display = "block";
     videoButtonRight.style.display = "none";
-    videoPlayerRight.src = "https://youtu.be/C2pKnWJqqcc?si=jXoc6HxkIrmSm8qP"; // Right video source
+    videoPlayerRight.src =
+      "https://www.youtube.com/embed/C2pKnWJqqcc?si=Era1CptHNBJVNAej"; // Right video source
   }
 
   // Function to close the right video modal
