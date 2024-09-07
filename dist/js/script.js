@@ -215,3 +215,5 @@ function changeImage(direction) {
   var modalImg = document.getElementById("modalImage");
   modalImg.src = images[currentImageIndex];
 }
+
+//dark light mode
