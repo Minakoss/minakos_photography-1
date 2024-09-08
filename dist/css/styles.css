@@ -650,8 +650,7 @@ img {
 
 /* Footer */
 .footer {
-  background: #0d0d0d url("../images/download-background.jpg") center
-    center/cover no-repeat;
+  background: #0d0d0d center center/cover no-repeat;
   padding: 11.5rem 2rem 8rem;
   color: #9f9caf;
   padding: 4rem 2rem;
