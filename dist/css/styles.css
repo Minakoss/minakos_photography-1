@@ -549,7 +549,6 @@ img {
 .details__icons {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 8rem;
   gap: 2rem;
   justify-content: space-around;
   text-align: center;
@@ -1516,4 +1515,15 @@ html {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.bottom-right-text {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Solid background */
+  color: white; /* Text color */
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
 }

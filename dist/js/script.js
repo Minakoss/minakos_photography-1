@@ -186,13 +186,13 @@ function changeImage(direction) {
 //dark light mode
 document.getElementById("modeToggle").addEventListener("click", function () {
   const body = document.body;
-  const featureSections = document.querySelectorAll('.features');
-  const heroSection = document.querySelector('.hero');
-  const footerSection = document.querySelector('.footer');
+  const featureSections = document.querySelectorAll(".features");
+  const heroSection = document.querySelector(".hero");
+  const footerSection = document.querySelector(".footer");
 
-  const sections = [ ...featureSections, heroSection, footerSection, body];
-  sections.forEach(sect => {
-    sect.classList.toggle('dark-mode');
-    sect.classList.toggle('light-mode');
-  })
+  const sections = [...featureSections, heroSection, footerSection, body];
+  sections.forEach((sect) => {
+    sect.classList.toggle("dark-mode");
+    sect.classList.toggle("light-mode");
+  });
 });
