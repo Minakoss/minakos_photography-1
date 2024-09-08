@@ -10,6 +10,7 @@
   --primary-color: #ffbc00;
   --secondary-color: #262431;
   --tertiary-color: #2f2c3d;
+  --hero-color: #0d0d0d;
 }
 
 html,
@@ -20,6 +21,16 @@ body {
   color: #fff;
   line-height: 1.6;
   scroll-behavior: smooth;
+}
+body.light-mode {
+  background-color: #eeeff1;
+  color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: var(--secondary-color);
+  color: #fff;
 }
 
 a {
@@ -158,8 +169,17 @@ img {
 
 /* Hero */
 .hero {
-  background: #0d0d0d url("../images/header-background.jpg") center center/cover
-    no-repeat;
+  background: var(--hero-color) url("../images/header-background.jpg") center
+    center/cover no-repeat;
+  padding: 11.5rem 2rem 8rem;
+}
+.hero.light-mode {
+  background-color: #d2d3d6;
+  color: black;
+}
+.hero.dark-mode {
+  background: var(--hero-color) url("../images/header-background.jpg") center
+    center/cover no-repeat;
   padding: 11.5rem 2rem 8rem;
 }
 
@@ -272,6 +292,14 @@ img {
 .features {
   background-color: var(--tertiary-color);
   padding: 6rem 2rem;
+}
+.features.dark-mode {
+  background-color: var(--tertiary-color);
+  padding: 6rem 2rem;
+}
+.features.light-mode {
+  background-color: #d2d3d6;
+  color: black;
 }
 
 .features__container {
@@ -630,6 +658,15 @@ img {
   color: #9f9caf;
   padding: 4rem 2rem;
   font-size: 0.9rem;
+}
+.footer.light-mode {
+  background-color: #d2d3d6;
+  color: black;
+}
+.footer.dark-mode {
+  background: var(--hero-color) url("../images/header-background.jpg") center
+    center/cover no-repeat;
+  padding: 11.5rem 2rem 8rem;
 }
 
 .footer__links-link,
