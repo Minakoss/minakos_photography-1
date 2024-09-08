@@ -218,3 +218,22 @@ function changeImage(direction) {
 }
 
 //dark light mode
+
+// Check for saved user preference on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const mode = localStorage.getItem("mode") || "light";
+  document.body.classList.add(`${mode}-mode`);
+});
+
+// Toggle mode and save preference
+document.getElementById("modeToggle").addEventListener("click", function () {
+  if (document.body.classList.contains("dark-mode")) {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+    localStorage.setItem("mode", "light");
+  } else {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("mode", "dark");
+  }
+});
