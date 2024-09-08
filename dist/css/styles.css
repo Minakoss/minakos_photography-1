@@ -169,8 +169,7 @@ img {
 
 /* Hero */
 .hero {
-  background: var(--hero-color) url("../images/header-background.jpg") center
-    center/cover no-repeat;
+  background: var(--hero-color) center center/cover no-repeat;
   padding: 11.5rem 2rem 8rem;
 }
 .hero.light-mode {
@@ -178,8 +177,7 @@ img {
   color: black;
 }
 .hero.dark-mode {
-  background: var(--hero-color) url("../images/header-background.jpg") center
-    center/cover no-repeat;
+  background: var(--hero-color) center center/cover no-repeat;
   padding: 11.5rem 2rem 8rem;
 }
 
@@ -664,8 +662,7 @@ img {
   color: black;
 }
 .footer.dark-mode {
-  background: var(--hero-color) url("../images/header-background.jpg") center
-    center/cover no-repeat;
+  background: var(--hero-color) center center/cover no-repeat;
   padding: 11.5rem 2rem 8rem;
 }
 
@@ -701,8 +698,7 @@ img {
 
 /* Inner Header */
 .inner-header {
-  background: #0d0d0d url("../images/header-background.jpg") center center/cover
-    no-repeat;
+  background: #0d0d0d center center/cover no-repeat;
   padding: 10rem 2rem 6rem;
 }
 
