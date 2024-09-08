@@ -83,28 +83,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//modal photo
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".images img");
   const modal = document.querySelector(".modal");
@@ -112,9 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalTxt = document.querySelector(".modal-txt");
   const closebtn = document.querySelector(".close");
   let currentIndex = 0;
-
-  const prevBtn = document.querySelector(".btnPrev");
-  const nextBtn = document.querySelector(".btnNext");
 
   //Add Click Event for All Images
   images.forEach((image, index) => {
@@ -135,23 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
       modalImg.classList.add("show");
     }, 300);
   }
-
-  //Next button onclick
-  nextBtn.addEventListener("click", function () {
-    currentIndex = currentIndex + 1 >= images.length ? 0 : currentIndex + 1;
-    updateModalContent();
-  });
-
-  //Previous button onclick
-  prevBtn.addEventListener("click", function () {
-    currentIndex = currentIndex - 1 < 0 ? images.length - 1 : currentIndex - 1;
-    updateModalContent();
-  });
-
-  //Code for Close Icon
-  closebtn.addEventListener("click", function () {
-    modal.classList.remove("show");
-  });
 });
 
 // Function to open the modal and display the clicked image
@@ -191,6 +149,14 @@ function closeModal() {
   document.removeEventListener("keydown", handleKeyPress);
 }
 
+// Get the <span> element that closes the modal
+var XButton = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+XButton.onclick = function () {
+  closeModal();
+};
+
 // Function to handle key press events
 function handleKeyPress(event) {
   if (event.key === "Escape") {
@@ -218,8 +184,15 @@ function changeImage(direction) {
 }
 
 //dark light mode
-
 document.getElementById("modeToggle").addEventListener("click", function () {
-  document.body.classList.toggle("dark-mode");
-  document.body.classList.toggle("light-mode");
+  const body = document.body;
+  const featureSections = document.querySelectorAll('.features');
+  const heroSection = document.querySelector('.hero');
+  const footerSection = document.querySelector('.footer');
+
+  const sections = [ ...featureSections, heroSection, footerSection, body];
+  sections.forEach(sect => {
+    sect.classList.toggle('dark-mode');
+    sect.classList.toggle('light-mode');
+  })
 });

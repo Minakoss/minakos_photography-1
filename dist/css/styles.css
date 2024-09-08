@@ -1510,3 +1510,10 @@ html {
   text-align: justify;
 }
 /* Default light mode styles */
+
+/* Toggle theme button */
+#modeToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
