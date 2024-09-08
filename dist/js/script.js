@@ -219,7 +219,20 @@ function changeImage(direction) {
 
 //dark light mode
 
-document.getElementById("modeToggle").addEventListener("click", function () {
+const modeToggle = document.getElementById("modeToggle");
+const darkModeIcon = document.getElementById("darkModeIcon");
+const lightModeIcon = document.getElementById("lightModeIcon");
+
+modeToggle.addEventListener("click", function () {
+  // Toggle dark mode class on the body
   document.body.classList.toggle("dark-mode");
-  document.body.classList.toggle("light-mode");
+
+  // Switch between icons
+  if (document.body.classList.contains("dark-mode")) {
+    darkModeIcon.style.display = "inline";
+    lightModeIcon.style.display = "none";
+  } else {
+    darkModeIcon.style.display = "none";
+    lightModeIcon.style.display = "inline";
+  }
 });
