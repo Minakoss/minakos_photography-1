@@ -318,6 +318,9 @@ img {
   max-width: 600px;
   margin: 1rem auto 4rem;
   color: var(--primary-color);
+  font-family: "Great Vibes", cursive;
+  font-size: 2em; /* Adjust size as needed */
+  letter-spacing: 5px;
 }
 
 .features__grid {
@@ -666,7 +669,7 @@ img {
 
 .footer__links-link,
 .footer__social-link {
-  color: #9f9caf;
+  color: #2e2d30;
 }
 
 .footer__links-link:hover,
@@ -1526,4 +1529,11 @@ html {
   padding: 5px 10px;
   font-size: 14px;
   border-radius: 5px;
+}
+
+.watermarked {
+  background-image: url("http://via.placeholder.com/100x100/09f/fff.png");
+  position: relative;
+  left: 30px;
+  opacity: 0.5;
 }
