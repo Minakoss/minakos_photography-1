@@ -318,9 +318,6 @@ img {
   max-width: 600px;
   margin: 1rem auto 4rem;
   color: var(--primary-color);
-  font-family: "Great Vibes", cursive;
-  font-size: 2em; /* Adjust size as needed */
-  letter-spacing: 5px;
 }
 
 .features__grid {
