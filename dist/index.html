@@ -650,6 +650,95 @@
         </div>
       </div>
     </section>
+    <!--Film super 8-->
+    <section class="features light-mode" id="film">
+      <div class="features__container container">
+        <div class="features__content">
+          <h2 class="features__title">Super 8</h2>
+          <p class="features__description">Filming moments</p>
+          <div class="details__grid">
+            <!-- Left Video Section -->
+            <div class="details__icons">
+              <div class="preview__container container">
+                <div class="preview__content">
+                  <p class="preview__description">
+                    Take a deep breath from the past
+                  </p>
+                  <div class="preview__image-container">
+                    <div class="preview__video-wrapper">
+                      <img src="./img/super8.png" alt="preview" />
+                      <button
+                        class="preview__video-button"
+                        id="videoButtonLeft"
+                      >
+                        <span class="preview__video-play-button"
+                          ><span></span
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Video Section -->
+            <div class="details__icons">
+              <div class="preview__container container">
+                <div class="preview__content">
+                  <p class="preview__description">Develop B&W film</p>
+                  <div class="preview__image-container">
+                    <div class="preview__video-wrapper">
+                      <img src="./img/devB&W.png" alt="preview" />
+                      <button
+                        class="preview__video-button"
+                        id="videoButtonRight"
+                      >
+                        <span class="preview__video-play-button"
+                          ><span></span
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left Video Modal -->
+          <div class="modal" id="videoModalLeft">
+            <div class="modal__content">
+              <span class="modal__close-button" id="closeButtonLeft"
+                >&times;</span
+              >
+              <iframe
+                id="videoPlayerLeft"
+                width="560"
+                height="315"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Right Video Modal -->
+          <div class="modal" id="videoModalRight">
+            <div class="modal__content">
+              <span class="modal__close-button" id="closeButtonRight"
+                >&times;</span
+              >
+              <iframe
+                id="videoPlayerRight"
+                width="560"
+                height="315"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="testimonials" id="testimonials">
       <div class="features__title">
         <h3>Instagram</h3>
@@ -748,95 +837,6 @@
                   </h6>
                 </span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Film super 8-->
-    <section class="details" id="film">
-      <div class="features__container container">
-        <div class="features__content">
-          <h2 class="features__title">Super 8</h2>
-          <p class="features__description">Filming moments</p>
-          <div class="details__grid">
-            <!-- Left Video Section -->
-            <div class="details__icons">
-              <div class="preview__container container">
-                <div class="preview__content">
-                  <p class="preview__description">
-                    Take a deep breath from the past
-                  </p>
-                  <div class="preview__image-container">
-                    <div class="preview__video-wrapper">
-                      <img src="./img/super8.png" alt="preview" />
-                      <button
-                        class="preview__video-button"
-                        id="videoButtonLeft"
-                      >
-                        <span class="preview__video-play-button"
-                          ><span></span
-                        ></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right Video Section -->
-            <div class="details__icons">
-              <div class="preview__container container">
-                <div class="preview__content">
-                  <p class="preview__description">Develop B&W film</p>
-                  <div class="preview__image-container">
-                    <div class="preview__video-wrapper">
-                      <img src="./img/devB&W.png" alt="preview" />
-                      <button
-                        class="preview__video-button"
-                        id="videoButtonRight"
-                      >
-                        <span class="preview__video-play-button"
-                          ><span></span
-                        ></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Left Video Modal -->
-          <div class="modal" id="videoModalLeft">
-            <div class="modal__content">
-              <span class="modal__close-button" id="closeButtonLeft"
-                >&times;</span
-              >
-              <iframe
-                id="videoPlayerLeft"
-                width="560"
-                height="315"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-
-          <!-- Right Video Modal -->
-          <div class="modal" id="videoModalRight">
-            <div class="modal__content">
-              <span class="modal__close-button" id="closeButtonRight"
-                >&times;</span
-              >
-              <iframe
-                id="videoPlayerRight"
-                width="560"
-                height="315"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
             </div>
           </div>
         </div>
