@@ -219,6 +219,7 @@ img {
 
 .hero__image img {
   max-width: 500px;
+  width: 300px;
 }
 
 .hero__buttons {
@@ -242,12 +243,12 @@ img {
   .hero {
     padding: 5vh 1.5rem;
     justify-content: center; /* Center content horizontally */
-    text-align: center; /* Center text */
+    text-align: justify; /* Center text */
   }
 
   .hero__container {
     flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
+    align-items: justify; /* Center items horizontally */
     gap: 2rem;
   }
 
@@ -1593,11 +1594,4 @@ html {
   padding: 5px 10px;
   font-size: 14px;
   border-radius: 5px;
-}
-
-.watermarked {
-  background-image: url("http://via.placeholder.com/100x100/09f/fff.png");
-  position: relative;
-  left: 30px;
-  opacity: 0.5;
 }
