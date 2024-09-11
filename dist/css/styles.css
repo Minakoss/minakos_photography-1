@@ -1655,3 +1655,10 @@ html {
     transform: rotate(0deg);
   }
 }
+
+.highlight-text {
+  color: var(--primary-color); /* Set a bright color */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.5);
+  font-size: 1.2em;
+}
