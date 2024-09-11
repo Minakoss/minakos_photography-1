@@ -1600,6 +1600,19 @@ html {
   border-radius: 5px;
 }
 
+/* zoom in collection */
+
+.zoom-collection {
+  transition: transform 0.3s; /* Animation */
+}
+
+.zoom-collection:hover {
+  transform: scale(
+    1.01
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* animate text title */
+
 #animated-text {
   display: block;
 }
