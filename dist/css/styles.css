@@ -248,7 +248,7 @@ img {
 
   .hero__container {
     flex-direction: column; /* Stack content vertically */
-    align-items: justify; /* Center items horizontally */
+    align-items: center; /* Center items horizontally */
     gap: 2rem;
   }
 
