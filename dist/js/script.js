@@ -190,6 +190,9 @@ document.getElementById("modeToggle").addEventListener("click", function () {
   const heroSection = document.querySelector(".hero");
   const footerSection = document.querySelector(".footer");
   const innerSection = document.querySelector(".inner-header");
+  const navbarmobileSection = document.querySelector(
+    ".navbar__mobile-menu-items"
+  );
 
   const sections = [...featureSections, heroSection, footerSection, body];
   sections.forEach((sect) => {
