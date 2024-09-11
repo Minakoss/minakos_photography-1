@@ -136,7 +136,7 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
-  background: var(--secondary-color);
+  background: var(--navbarscroll-color);
   opacity: 0.95;
   padding: 3rem 2rem;
   text-align: center;
