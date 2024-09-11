@@ -1573,7 +1573,7 @@ html {
 }
 
 .word:nth-child(1) {
-  animation-delay: 0s;
+  animation-delay: 0.3s;
 }
 
 .word:nth-child(2) {
