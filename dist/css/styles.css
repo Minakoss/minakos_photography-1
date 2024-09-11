@@ -291,12 +291,10 @@ img {
   background-color: var(--tertiary-color);
   padding: 6rem 2rem;
 }
-
 .features.dark-mode {
   background-color: var(--tertiary-color);
   padding: 6rem 2rem;
 }
-
 .features.light-mode {
   background-color: #dcdddf;
   color: black;
@@ -322,60 +320,61 @@ img {
   color: var(--primary-color);
 }
 
-/* Flexbox layout for grid items in a single row */
 .features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.features__grid-column {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 3px; /* Adjusted gap to 3px */
-  flex-wrap: nowrap; /* Ensure items stay in a single line */
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: auto;
+}
+.features__grid-column_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5rem;
+  margin-bottom: auto;
+}
+.features__grid-column_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5rem;
+  margin-bottom: auto;
 }
 
 .features__grid-item {
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: start;
+  justify-content: start;
+  text-align: right;
   gap: 1rem;
-  max-width: 150px; /* Control size of each item */
 }
 
-/* Title inside each grid item */
 .features__grid-item-text-title {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-/* Icon styling */
 .features__grid-item-icon {
-  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.features__grid-item-icon i {
   color: var(--primary-color);
 }
 
-/* Adjust the positioning for the right column if needed */
 .features__grid-column-right .features__grid-item {
   flex-direction: row-reverse;
   text-align: left;
-}
-
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-  .features__grid {
-    flex-direction: column; /* Stack items vertically on mobile */
-    flex-wrap: wrap; /* Allow wrapping */
-    gap: 1.5rem; /* Add some spacing between items */
-  }
-
-  .features__grid-item {
-    max-width: 100%; /* Make the grid item take up full width */
-  }
-
-  .hover-image {
-    width: 100%; /* Ensure images stretch across the full width */
-    max-width: 100%; /* Remove any width restriction for images */
-  }
 }
 
 /* Preview */
