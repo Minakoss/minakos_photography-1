@@ -170,26 +170,34 @@ img {
 /* Hero */
 .hero {
   background: var(--hero-color) center center/cover no-repeat;
-  padding: 11.5rem 2rem 8rem;
+  height: 100vh; /* Full screen height */
+  padding: 10vh 2rem; /* Vertical padding in percentage of viewport */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Default layout for larger screens */
 }
+
 .hero.light-mode {
   background-color: #d2d3d6;
   color: black;
 }
+
 .hero.dark-mode {
   background: var(--hero-color) center center/cover no-repeat;
-  padding: 11.5rem 2rem 8rem;
+  padding: 10vh 2rem;
 }
 
 .hero__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Default layout for larger screens */
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .hero__content {
   max-width: 500px;
+  text-align: left; /* Default alignment */
 }
 
 .hero__title {
@@ -227,6 +235,56 @@ img {
 
 .hero__button i {
   margin-right: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero {
+    padding: 5vh 1.5rem;
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+  }
+
+  .hero__container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 2rem;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: 6vw; /* Responsive font size for smaller screens */
+  }
+
+  .hero__image img {
+    max-width: 80%;
+  }
+
+  .hero__buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 4vh 1rem;
+  }
+
+  .hero__title {
+    font-size: 8vw;
+  }
+
+  .hero__image img {
+    max-width: 90%;
+  }
+
+  .hero__buttons {
+    gap: 0.5rem;
+  }
 }
 
 /* Testimonials */
