@@ -658,84 +658,6 @@ img {
   font-weight: 400;
 }
 
-/* Screenshots */
-.screenshots {
-  padding: 6rem 2rem;
-  background: var(--tertiary-color);
-  text-align: center;
-}
-
-.screenshots__container {
-  max-width: 1200px;
-}
-
-.screenshots__title {
-  font-size: 2.3rem;
-  text-transform: uppercase;
-  border-bottom: 2px solid var(--primary-color);
-  width: 300px;
-  margin: 0 auto 2.5rem;
-}
-
-.screenshots__images {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.screenshots__images img {
-  width: 100%;
-  max-width: 200px;
-  margin: 0 auto;
-}
-
-/* Download */
-.download {
-  background: #000 url("../images/download-background.jpg") center center/cover
-    no-repeat;
-  padding: 11.5rem 2rem 8rem;
-}
-
-.download__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-}
-
-.download__content {
-  max-width: 500px;
-}
-
-.download__description {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.download__image img {
-  width: 100%;
-  max-width: 500px;
-}
-
-.download__buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.download__button {
-  padding: 1rem 2rem;
-}
-
-.download__button i {
-  margin-right: 0.5rem;
-}
-
 /* Footer */
 .footer {
   background: #0d0d0d center center/cover no-repeat;
@@ -1667,7 +1589,7 @@ html {
 
 @keyframes fadeInRotate {
   0% {
-    opacity: ;
+    opacity: 1;
     transform: rotate(0deg);
   }
 
@@ -1687,4 +1609,18 @@ html {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
     0 0 20px rgba(255, 255, 255, 0.5);
   font-size: 1.2em;
+}
+
+/*image download*/
+.image-download {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  max-width: 100%;
+}
+
+.image-download img {
+  width: 100%;
+  height: 300px;
+  display: block;
 }
