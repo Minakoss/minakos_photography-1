@@ -1599,3 +1599,46 @@ html {
   font-size: 14px;
   border-radius: 5px;
 }
+
+#animated-text {
+  display: block;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInRotate 1s ease forwards;
+}
+
+.word:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.word:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.word:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.word:nth-child(4) {
+  animation-delay: 3s;
+}
+
+@keyframes fadeInRotate {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
