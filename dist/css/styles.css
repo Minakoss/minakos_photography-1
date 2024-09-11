@@ -11,6 +11,7 @@
   --secondary-color: #262431;
   --tertiary-color: #2f2c3d;
   --hero-color: #0d0d0d;
+  --navbarscroll-color: #cccdd0;
 }
 
 html,
@@ -86,7 +87,7 @@ img {
 
 .navbar.navbar--scroll {
   background-color: rgba(38, 36, 49, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(7px);
 }
 
 .navbar__container {
