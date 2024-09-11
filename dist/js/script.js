@@ -189,6 +189,7 @@ document.getElementById("modeToggle").addEventListener("click", function () {
   const featureSections = document.querySelectorAll(".features");
   const heroSection = document.querySelector(".hero");
   const footerSection = document.querySelector(".footer");
+  const innerSection = document.querySelector(".inner-header");
 
   const sections = [...featureSections, heroSection, footerSection, body];
   sections.forEach((sect) => {
