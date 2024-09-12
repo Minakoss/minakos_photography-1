@@ -366,6 +366,11 @@ img {
     flex: 1 1 calc(50% - 16px); /* Two cards per row on tablets */
     max-width: calc(50% - 16px);
   }
+  .testimonials__container {
+    flex-direction: column; /* Stack items vertically on mobile */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 1.5rem; /* Add some spacing between items */
+  }
 }
 
 @media (max-width: 480px) {
@@ -1580,8 +1585,7 @@ html {
 .word:nth-child(4) {
   animation-delay: 3s;
 }
-
-@keyframes fadeInRotate {
+@media @keyframes fadeInRotate {
   0% {
     opacity: 1;
     transform: rotate(0deg);
