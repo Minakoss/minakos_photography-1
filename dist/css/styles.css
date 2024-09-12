@@ -1027,14 +1027,24 @@ img {
   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (Image) */
+/* Modal Content (Image) 
 .modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
+}*/
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 590px;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease; /* Smooth transition on opening */
 }
-
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
