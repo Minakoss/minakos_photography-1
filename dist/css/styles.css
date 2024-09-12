@@ -1033,6 +1033,10 @@ img {
   display: block;
   width: 80%;
   max-width: 700px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
