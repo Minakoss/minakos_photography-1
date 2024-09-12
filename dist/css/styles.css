@@ -328,6 +328,23 @@ img {
   }
 }
 
+.features__grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px; /* Adjusted gap to 3px */
+  flex-wrap: nowrap; /* Ensure items stay in a single line */
+}
+
+.features__grid-item {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  max-width: 150px;
+}
 /* Testimonials */
 .testimonials {
   padding: 4rem 2rem;
@@ -343,7 +360,7 @@ img {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
   gap: 16px; /* Adjust spacing between items as needed */
-  flex-wrap: nowrap; /*  Ensure items stay in a single line */
+  /*  flex-wrap: nowrap; Ensure items stay in a single line */
 }
 
 .testimonials__card {
@@ -360,19 +377,6 @@ img {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
-  /* Adjusts card size for tablets */
-  .testimonials__card {
-    flex: 1 1 calc(50% - 16px); /* Two cards per row on tablets */
-    max-width: calc(50% - 16px);
-  }
-  .testimonials__container {
-    flex-direction: column; /* Stack items vertically on mobile */
-    flex-wrap: wrap; /* Allow wrapping */
-    gap: 1.5rem; /* Add some spacing between items */
-  }
-}
-
 @media (max-width: 480px) {
   /* Adjusts card size for mobile */
   .testimonials__card {
@@ -380,14 +384,34 @@ img {
     max-width: 100%;
   }
 
-  /* Hide overlay on mobile */
+  /* Stack icons (heart and comment) below the image */
+  .overlay-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack the icons vertically */
+    align-items: center; /* Center them */
+  }
+
+  .overlay-content span {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; /* Add spacing between the icons */
+  }
+
   .overlay {
-    display: none;
+    display: block; /* Make sure overlay is visible */
+    padding-top: 10px; /* Add some padding on top */
   }
 
   /* Optional: Reduce padding for smaller screens */
   .testimonials {
     padding: 2rem 1rem;
+  }
+
+  /* Style the photo */
+  .photo img {
+    width: 100%; /* Full width on mobile */
+    height: auto;
   }
 }
 
