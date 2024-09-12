@@ -343,7 +343,7 @@ img {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
   gap: 16px; /* Adjust spacing between items as needed */
-  /* flex-wrap: nowrap;  Ensure items stay in a single line */
+  flex-wrap: nowrap; /*  Ensure items stay in a single line */
 }
 
 .testimonials__card {
