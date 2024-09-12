@@ -343,6 +343,7 @@ img {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
   gap: 16px; /* Adjust spacing between items as needed */
+  /* flex-wrap: nowrap;  Ensure items stay in a single line */
 }
 
 .testimonials__card {
@@ -906,25 +907,6 @@ img {
     flex-direction: column;
     gap: 2rem;
     margin-top: 4rem;
-  }
-
-  /* Download */
-  .download {
-    padding-top: 10rem;
-    text-align: center;
-  }
-
-  .download__container {
-    flex-direction: column-reverse;
-  }
-
-  .download__buttons {
-    flex-direction: column;
-  }
-
-  .download__button {
-    width: 100%;
-    padding: 0.7rem;
   }
 
   /* Footer */
