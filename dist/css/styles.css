@@ -1609,7 +1609,7 @@ html {
 .word:nth-child(4) {
   animation-delay: 3s;
 }
-@media @keyframes fadeInRotate {
+@keyframes fadeInRotate {
   0% {
     opacity: 1;
     transform: rotate(0deg);
