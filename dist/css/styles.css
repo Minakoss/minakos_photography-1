@@ -1609,6 +1609,9 @@ html {
 .word:nth-child(4) {
   animation-delay: 3s;
 }
+.word:nth-child(5) {
+  animation-delay: 4s;
+}
 @keyframes fadeInRotate {
   0% {
     opacity: 1;
