@@ -735,6 +735,20 @@ img {
   gap: 1.5rem;
   justify-content: center;
 }
+.fa-camera {
+  font-size: 39px;
+}
+@media (max-width: 768px) {
+  .footer__social {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 8px;
+  }
+  .fa-camera {
+    font-size: 22px;
+  }
+}
 
 /* Inner Header */
 .inner-header {
