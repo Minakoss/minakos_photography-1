@@ -1663,3 +1663,22 @@ html {
   height: 300px;
   display: block;
 }
+
+/*animation hero*/
+.hero__title,
+.hero__description {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero__description {
+  animation-delay: 1s; /* Η περιγραφή θα εμφανιστεί με καθυστέρηση 1 δευτερολέπτου */
+}
