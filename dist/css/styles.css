@@ -483,7 +483,7 @@ img {
 #collection {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.7s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* When the section is in view */
