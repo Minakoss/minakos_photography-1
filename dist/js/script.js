@@ -208,13 +208,15 @@ document.getElementById("modeToggle").addEventListener("click", function () {
   });
 });
 
-//animation section
+//animation sections #ψολλεψτιον
 document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(
-    ".features.light-mode, .features__grid-item"
+  // Select the section and elements within the section by ID
+  const section = document.querySelector("#collection");
+  const elements = section.querySelectorAll(
+    ".features__title, .features__description"
   );
 
-  const observer = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("in-view"); // Add class when in view
@@ -224,8 +226,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  elements.forEach((el) => observer.observe(el)); // Observe all elements
+  // Observe the section itself and its child elements
+  observer.observe(section);
+  elements.forEach((el) => observer.observe(el));
 });
+//animation sections details
 
 document.addEventListener("DOMContentLoaded", function () {
   // Select sections and grid items
@@ -246,6 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
   sections.forEach((el) => observer.observe(el)); // Observe all elements
 });
 
+//animation sections testimonials
 document.addEventListener("DOMContentLoaded", function () {
   // Select sections and elements within the section
   const sections = document.querySelectorAll(

@@ -466,7 +466,8 @@ img {
   background-color: #dcdddf;
   color: black;
 }
-/* Keyframes for fade-in effect */
+
+/* Keyframes for fade-in effect #ψολλεψτιον*/
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -479,26 +480,28 @@ img {
 }
 
 /* Initially hidden */
-.features.light-mode {
+#collection {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* When the section is in view */
-.features.light-mode.in-view {
+#collection.in-view {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Apply similar styles to the grid items */
-.features__grid-item {
+/* Apply similar styles to the elements within the section */
+#collection .features__title,
+#collection .features__description {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.features__grid-item.in-view {
+#collection .features__title.in-view,
+#collection .features__description.in-view {
   opacity: 1;
   transform: translateY(0);
 }
