@@ -207,27 +207,3 @@ document.getElementById("modeToggle").addEventListener("click", function () {
     sect.classList.toggle("light-mode");
   });
 });
-
-//popup window
-// Αποκτούμε αναφορές στο trigger και στο popup
-const popupTrigger = document.getElementById("popup-trigger");
-const popupWindow = document.getElementById("popup-window");
-const closeButton = document.querySelector(".popup .close");
-
-// Εμφάνιση του popup όταν πατηθεί το κουμπί
-popupTrigger.addEventListener("click", function (event) {
-  event.preventDefault(); // Αποφυγή προεπιλεγμένης συμπεριφοράς
-  popupWindow.classList.remove("hidden");
-});
-
-// Απόκρυψη του popup όταν πατηθεί το κουμπί κλεισίματος
-closeButton.addEventListener("click", function () {
-  popupWindow.classList.add("hidden");
-});
-
-// Απόκρυψη του popup όταν πατηθεί οπουδήποτε εκτός του παραθύρου
-window.addEventListener("click", function (event) {
-  if (event.target === popupWindow) {
-    popupWindow.classList.add("hidden");
-  }
-});
