@@ -370,6 +370,44 @@ img {
   ); /* Ensure that images don’t exceed container width */
   box-sizing: border-box; /* Includes padding and border in element’s total width and height */
 }
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Slide-up effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initially hidden */
+.testimonials {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* When the section is in view */
+.testimonials.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Apply similar styles to the elements within the section */
+.testimonials .features__title,
+.testimonials .features__description {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.testimonials .features__title.in-view,
+.testimonials .features__description.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .photo img {
   width: 100%;
@@ -427,6 +465,42 @@ img {
 .features.light-mode {
   background-color: #dcdddf;
   color: black;
+}
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Slide-up effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initially hidden */
+.features.light-mode {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* When the section is in view */
+.features.light-mode.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Apply similar styles to the grid items */
+.features__grid-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.features__grid-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .features__container {
@@ -640,7 +714,42 @@ img {
 .details {
   padding: 9rem 2rem;
 }
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Slide-up effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Initially hidden */
+.details {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* When the section is in view */
+.details.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Apply similar styles to the grid items */
+.details__grid-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.details__grid-content.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 .details__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

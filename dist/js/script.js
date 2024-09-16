@@ -207,3 +207,60 @@ document.getElementById("modeToggle").addEventListener("click", function () {
     sect.classList.toggle("light-mode");
   });
 });
+
+//animation section
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(
+    ".features.light-mode, .features__grid-item"
+  );
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view"); // Add class when in view
+      } else {
+        entry.target.classList.remove("in-view"); // Remove class when out of view (optional)
+      }
+    });
+  });
+
+  elements.forEach((el) => observer.observe(el)); // Observe all elements
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Select sections and grid items
+  const sections = document.querySelectorAll(
+    ".details, .details__grid-content"
+  );
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view"); // Add class when in view
+      } else {
+        entry.target.classList.remove("in-view"); // Remove class when out of view (optional)
+      }
+    });
+  });
+
+  sections.forEach((el) => observer.observe(el)); // Observe all elements
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Select sections and elements within the section
+  const sections = document.querySelectorAll(
+    ".testimonials, .testimonials .features__title, .testimonials .features__description"
+  );
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view"); // Add class when in view
+      } else {
+        entry.target.classList.remove("in-view"); // Remove class when out of view (optional)
+      }
+    });
+  });
+
+  sections.forEach((el) => observer.observe(el)); // Observe all elements
+});
