@@ -144,6 +144,13 @@ function openModal(element) {
 function closeModal() {
   var modal = document.getElementById("imageModal");
   modal.style.display = "none";
+  // Close the modal if user clicks outside of the modal content
+  window.onclick = function (event) {
+    var modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 
   // Remove event listener for key presses
   document.removeEventListener("keydown", handleKeyPress);
@@ -183,6 +190,20 @@ function changeImage(direction) {
   modalImg.src = images[currentImageIndex];
 }
 
+var currentImageIndex = 0;
+var images = ["image1.jpg", "image2.jpg", "image3.jpg"]; // λίστα των εικόνων σου
+
+// Add event listener for scroll
+document.addEventListener("wheel", function (event) {
+  if (event.deltaY < 0) {
+    // Scroll up (change image to the previous one)
+    changeImage(-1);
+  } else if (event.deltaY > 0) {
+    // Scroll down (change image to the next one)
+    changeImage(1);
+  }
+});
+
 //dark light mode
 document.getElementById("modeToggle").addEventListener("click", function () {
   const body = document.body;
@@ -199,4 +220,28 @@ document.getElementById("modeToggle").addEventListener("click", function () {
     sect.classList.toggle("dark-mode");
     sect.classList.toggle("light-mode");
   });
+});
+
+//popup window
+// Αποκτούμε αναφορές στο trigger και στο popup
+const popupTrigger = document.getElementById("popup-trigger");
+const popupWindow = document.getElementById("popup-window");
+const closeButton = document.querySelector(".popup .close");
+
+// Εμφάνιση του popup όταν πατηθεί το κουμπί
+popupTrigger.addEventListener("click", function (event) {
+  event.preventDefault(); // Αποφυγή προεπιλεγμένης συμπεριφοράς
+  popupWindow.classList.remove("hidden");
+});
+
+// Απόκρυψη του popup όταν πατηθεί το κουμπί κλεισίματος
+closeButton.addEventListener("click", function () {
+  popupWindow.classList.add("hidden");
+});
+
+// Απόκρυψη του popup όταν πατηθεί οπουδήποτε εκτός του παραθύρου
+window.addEventListener("click", function (event) {
+  if (event.target === popupWindow) {
+    popupWindow.classList.add("hidden");
+  }
 });

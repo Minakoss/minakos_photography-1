@@ -67,12 +67,19 @@
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
-
             <li class="navbar__menu-item">
-              <a href="" target="_blank" class="navbar__menu-link--primary">
+              <a href="#" id="popup-trigger" class="navbar__menu-link--primary">
                 <i class="fa-solid fa-user"></i>
               </a>
             </li>
+
+            <!-- Popup window -->
+            <div id="popup-window" class="popup hidden">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <p>Αυτό είναι ένα popup παράθυρο!</p>
+              </div>
+            </div>
             <li class="navbar__menu-item">
               <button id="modeToggle" class="navbar__menu-link--primary">
                 <i class="fa-solid fa-moon"></i> |
