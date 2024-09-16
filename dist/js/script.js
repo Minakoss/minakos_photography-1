@@ -190,20 +190,6 @@ function changeImage(direction) {
   modalImg.src = images[currentImageIndex];
 }
 
-var currentImageIndex = 0;
-var images = ["image1.jpg", "image2.jpg", "image3.jpg"]; // λίστα των εικόνων σου
-
-// Add event listener for scroll
-document.addEventListener("wheel", function (event) {
-  if (event.deltaY < 0) {
-    // Scroll up (change image to the previous one)
-    changeImage(-1);
-  } else if (event.deltaY > 0) {
-    // Scroll down (change image to the next one)
-    changeImage(1);
-  }
-});
-
 //dark light mode
 document.getElementById("modeToggle").addEventListener("click", function () {
   const body = document.body;
