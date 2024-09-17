@@ -467,7 +467,7 @@ img {
   color: black;
 }
 
-/* Keyframes for fade-in effect #ψολλεψτιον*/
+/* Keyframes for fade-in effect #collection*/
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -502,6 +502,33 @@ img {
 
 #collection .features__title.in-view,
 #collection .features__description.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*animation class features__grid-item*/
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Slide-up effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initially hidden */
+.features__grid-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Increase duration */
+}
+
+/* When the grid item is in view */
+.features__grid-item.in-view {
   opacity: 1;
   transform: translateY(0);
 }

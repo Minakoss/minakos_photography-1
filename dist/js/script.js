@@ -270,3 +270,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   sections.forEach((el) => observer.observe(el)); // Observe all elements
 });
+
+//animation class features__grid-item
+document.addEventListener("DOMContentLoaded", function () {
+  // Select the grid items
+  const gridItems = document.querySelectorAll(".features__grid-item");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view"); // Add class when in view
+      } else {
+        entry.target.classList.remove("in-view"); // Remove class when out of view (optional)
+      }
+    });
+  });
+
+  // Observe each grid item
+  gridItems.forEach((item) => observer.observe(item));
+});
