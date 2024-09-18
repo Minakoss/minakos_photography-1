@@ -50,7 +50,11 @@
               </a>
             </li>
             <li class="navbar__menu-item">
-              <a href="" target="_blank" class="navbar__menu-link--primary">
+              <a
+                href="login.html"
+                target="_blank"
+                class="navbar__menu-link--primary"
+              >
                 <i class="fa-solid fa-user"></i>
               </a>
             </li>
@@ -121,38 +125,15 @@
     </header>
 
     <section class="user-section container">
-      <div class="form-container">
-        <h2>Register</h2>
-        <form action="Register.html" method="post" class="form">
-          <input
-            type="email"
-            class="text-input email-input"
-            id="email"
-            placeholder="Email Address"
-            name="email"
-            required
-          />
-          <input
-            type="password"
-            class="text-input password-input"
-            id="new-password"
-            placeholder="Password"
-            name="new-password"
-            required
-          />
-          <br />
-          <button type="submit" class="form-btn">Register</button>
-        </form>
-      </div>
-
-      <div class="form-container">
+      <!-- Login Form Container -->
+      <div class="form-container login-form-container">
         <h2>Login</h2>
         <form action="#" method="post" class="form">
           <input
             type="text"
             class="text-input username-input"
             id="username"
-            placeholder="Username"
+            placeholder="Username/Email"
             name="username"
             required
           />
@@ -167,6 +148,10 @@
           <br />
           <button type="submit" class="form-btn">Login</button>
         </form>
+        <p class="register-link">
+          Don't have an account?
+          <a href="Register.html" class="register-btn">Register</a>
+        </p>
       </div>
     </section>
 
