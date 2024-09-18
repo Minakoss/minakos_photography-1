@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/favicon.png" />
+    <title>Grain Life | The Grain Earth,One Shot At a Time.</title>
+  </head>
+  <body class="light-mode">
+    <navbar class="navbar">
+      <div class="navbar__container container">
+        <div class="navbar__logo">
+          <img src="./img/logo.png" alt="Grain Life" />
+        </div>
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu-item">
+              <a href="index.html" class="navbar__menu-link">Home</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="index.html#collection" class="navbar__menu-link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navbar__menu-item">
+              <a href="index.html#bio" class="navbar__menu-link">Profile</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="contacts.html" class="navbar__menu-link">Contact</a>
+            </li>
+
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link--primary">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="" target="_blank" class="navbar__menu-link--primary">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+            <!-- Dark/Light Mode Toggle Button -->
+            <li class="navbar__menu-item">
+              <button id="modeToggle" class="navbar__menu-link--primary">
+                <i class="fa-solid fa-moon"></i> |
+                <i class="fa-solid fa-sun"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu & Hamburger Icon -->
+        <div class="navbar__mobile-menu">
+          <div class="navbar__mobile-menu-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <!-- Mobile Menu Items -->
+          <div class="navbar__mobile-menu-items light-mode">
+            <ul class="navbar__mobile-menu-list">
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html" class="navbar__mobile-menu-link">Home</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html#collection" class="navbar__mobile-menu-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html#bio" class="navbar__mobile-menu-link"
+                  >Profile</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="contacts.html" class="navbar__mobile-menu-link"
+                  >Contact</a
+                >
+              </li>
+
+              <li class="navbar__mobile-menu-item">
+                <a href="#" class="navbar__mobile-menu-link--primary">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a
+                  href="https://x.com/mi_nakos"
+                  target="_blank"
+                  class="navbar__mobile-menu-link--primary"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </navbar>
+
+    <!-- Inner Header -->
+    <header class="inner-header light-mode">
+      <div class="inner-header__container container">
+        <div class="hero__image">
+          <img src="./img/logo2.png" alt="Grain Life" />
+        </div>
+      </div>
+    </header>
+
+    <section class="user-section container">
+      <div class="form-container">
+        <h2>Register</h2>
+        <form action="Register.html" method="post" class="form">
+          <input
+            type="email"
+            class="text-input email-input"
+            id="email"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+          <input
+            type="password"
+            class="text-input password-input"
+            id="new-password"
+            placeholder="Password"
+            name="new-password"
+            required
+          />
+          <br />
+          <button type="submit" class="form-btn">Register</button>
+        </form>
+      </div>
+
+      <div class="form-container">
+        <h2>Login</h2>
+        <form action="#" method="post" class="form">
+          <input
+            type="text"
+            class="text-input username-input"
+            id="username"
+            placeholder="Username"
+            name="username"
+            required
+          />
+          <input
+            type="password"
+            class="text-input password-input"
+            id="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <br />
+          <button type="submit" class="form-btn">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer light-mode">
+      <div class="footer__container container">
+        <div class="footer__about">
+          <h4 class="footer__title">Grain Life</h4>
+
+          <p class="footer__description">
+            All images are protected by copyright law. Users are strictly
+            prohibited from copying, redistributing, or using photos. This
+            includes commercial and non-commercial use.
+          </p>
+          <i class="fas fa-copyright"></i> 2024
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a href="index.html" class="footer__links-link"> Home </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="index.html#collection" class="footer__links-link">
+                Portfolio
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="index.html#bio" class="footer__links-link"> Profile </a>
+            </li>
+
+            <li class="footer__links-item">
+              <a href="index.html" class="footer__links-link"> Details </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="index.html" class="footer__links-link"> Download </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">
+            <i class="fa-brands fa-instagram fa-3x"></i>
+          </a>
+          <a
+            href="https://x.com/mi_nakos"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-x-twitter fa-3x"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@nakospapast4177"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-youtube fa-3x"></i>
+          </a>
+          <a
+            href="https://www.istockphoto.com/portfolio/nontaspapastefanis?assettype=image&mediatype=photography&sort=mostpopular"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fas fa-camera"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
