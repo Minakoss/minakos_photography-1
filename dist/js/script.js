@@ -192,27 +192,61 @@ function changeImage(direction) {
 
 //dark light mode
 // Συνάρτηση για αυτόματη αλλαγή θέματος με βάση την ώρα
-function setThemeBasedOnTime() {
-  const hour = new Date().getHours();
-  const prefersDarkScheme = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches;
-  const isNightTime = hour >= 18 || hour < 6; // Από 18:00 μέχρι 06:00
+// function setThemeBasedOnTime() {
+// const hour = new Date().getHours();
+// const prefersDarkScheme = window.matchMedia(
+//   "(prefers-color-scheme: dark)"
+//  ).matches;
+// const isNightTime = hour >= 18 || hour < 6; // Από 18:00 μέχρι 06:00
 
-  // Έλεγχος αν υπάρχει αποθηκευμένη προτίμηση χρήστη στο localStorage
-  const savedTheme = localStorage.getItem("theme");
+// Έλεγχος αν υπάρχει αποθηκευμένη προτίμηση χρήστη στο localStorage
+//  const savedTheme = localStorage.getItem("theme");
 
-  if (savedTheme) {
-    applyTheme(savedTheme);
-  } else if (isNightTime || prefersDarkScheme) {
-    applyTheme("dark-mode");
-  } else {
-    applyTheme("light-mode");
-  }
-}
+// if (savedTheme) {
+//   applyTheme(savedTheme);
+//  } else if (isNightTime || prefersDarkScheme) {
+//    applyTheme("dark-mode");
+//  } else {
+//   applyTheme("light-mode");
+//  }
+// }
 
 // Συνάρτηση για την εφαρμογή θέματος
-function applyTheme(theme) {
+// function applyTheme(theme) {
+//  const body = document.body;
+//  const featureSections = document.querySelectorAll(".features");
+//  const heroSection = document.querySelector(".hero");
+//  const footerSection = document.querySelector(".footer");
+//  const innerSection = document.querySelector(".inner-header");
+// const navbarmobileSection = document.querySelector(
+//   ".navbar__mobile-menu-items"
+// );
+
+// const sections = [...featureSections, heroSection, footerSection, body];
+
+// Καθαρισμός παλιών τάξεων
+// sections.forEach((sect) => {
+//   sect.classList.remove("dark-mode", "light-mode");
+//   sect.classList.add(theme);
+// });
+// }
+
+// Εναλλαγή θέματος μέσω του κουμπιού
+// document.getElementById("modeToggle").addEventListener("click", function () {
+//  const body = document.body;
+//  const isDarkMode = body.classList.contains("dark-mode");
+//  const newTheme = isDarkMode ? "light-mode" : "dark-mode";
+
+//  applyTheme(newTheme);
+
+// Αποθήκευση της επιλογής χρήστη στο localStorage
+// localStorage.setItem("theme", newTheme);
+// });
+
+// Κάλεσε τη συνάρτηση για να ορίσεις το αρχικό θέμα
+// window.onload = setThemeBasedOnTime;
+
+document.getElementById("modeToggle").addEventListener("click", function () {
   const body = document.body;
   const featureSections = document.querySelectorAll(".features");
   const heroSection = document.querySelector(".hero");
@@ -223,45 +257,11 @@ function applyTheme(theme) {
   );
 
   const sections = [...featureSections, heroSection, footerSection, body];
-
-  // Καθαρισμός παλιών τάξεων
   sections.forEach((sect) => {
-    sect.classList.remove("dark-mode", "light-mode");
-    sect.classList.add(theme);
+    sect.classList.toggle("dark-mode");
+    sect.classList.toggle("light-mode");
   });
-}
-
-// Εναλλαγή θέματος μέσω του κουμπιού
-document.getElementById("modeToggle").addEventListener("click", function () {
-  const body = document.body;
-  const isDarkMode = body.classList.contains("dark-mode");
-  const newTheme = isDarkMode ? "light-mode" : "dark-mode";
-
-  applyTheme(newTheme);
-
-  // Αποθήκευση της επιλογής χρήστη στο localStorage
-  localStorage.setItem("theme", newTheme);
 });
-
-// Κάλεσε τη συνάρτηση για να ορίσεις το αρχικό θέμα
-window.onload = setThemeBasedOnTime;
-
-//document.getElementById("modeToggle").addEventListener("click", function () {
-//const body = document.body;
-//const featureSections = document.querySelectorAll(".features");
-//const heroSection = document.querySelector(".hero");
-//const footerSection = document.querySelector(".footer");
-//const innerSection = document.querySelector(".inner-header");
-//const navbarmobileSection = document.querySelector(
-//  ".navbar__mobile-menu-items"
-//);
-
-//const sections = [...featureSections, heroSection, footerSection, body];
-//sections.forEach((sect) => {
-//sect.classList.toggle("dark-mode");
-//sect.classList.toggle("light-mode");
-//});
-//});
 
 //animation sections #ψολλεψτιον
 document.addEventListener("DOMContentLoaded", function () {
@@ -344,3 +344,5 @@ document.addEventListener("DOMContentLoaded", function () {
   // Observe each grid item
   gridItems.forEach((item) => observer.observe(item));
 });
+
+//popup window
