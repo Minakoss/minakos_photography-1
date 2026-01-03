@@ -1902,3 +1902,32 @@ h2 {
     padding: 1rem; /* Add padding to the section */
   }
 }
+/* hero */
+#typewriter {
+  display: inline;
+  white-space: pre-line;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+/* bio */
+.bio-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: blink 1s infinite;
+}

@@ -246,17 +246,65 @@ function changeImage(direction) {
 // Κάλεσε τη συνάρτηση για να ορίσεις το αρχικό θέμα
 // window.onload = setThemeBasedOnTime;
 
-document.getElementById("modeToggle").addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  const lines = [
+    "Welcome to the portfolio of an urban photographer,",
+    "where each shot captures the essence",
+    "of the great outdoors.",
+  ];
+
+  const typewriter = document.getElementById("typewriter");
+  const cursor = document.querySelector(".cursor");
+
+  let lineIndex = 0;
+  let charIndex = 0;
+
+  function typeLine() {
+    if (lineIndex < lines.length) {
+      if (charIndex < lines[lineIndex].length) {
+        typewriter.textContent += lines[lineIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeLine, 60);
+      } else {
+        // τέλος γραμμής → νέα γραμμή
+        typewriter.textContent += "\n";
+        lineIndex++;
+        charIndex = 0;
+        setTimeout(typeLine, 600);
+      }
+    } else {
+      // στο τέλος, ο κέρσορας μένει κάτω
+      cursor.style.display = "inline-block";
+    }
+  }
+
+  typeLine();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
   const featureSections = document.querySelectorAll(".features");
   const heroSection = document.querySelector(".hero");
   const footerSection = document.querySelector(".footer");
 
   const sections = [...featureSections, heroSection, footerSection, body];
+
+  // 👉 ΠΡΟΕΠΙΛΟΓΗ: DARK MODE
   sections.forEach((sect) => {
-    sect.classList.toggle("dark-mode");
-    sect.classList.toggle("light-mode");
+    sect.classList.remove("light-mode");
+    sect.classList.add("dark-mode");
   });
+
+  // 👉 TOGGLE BUTTON
+  const modeToggle = document.getElementById("modeToggle");
+  if (modeToggle) {
+    modeToggle.addEventListener("click", function () {
+      sections.forEach((sect) => {
+        sect.classList.toggle("dark-mode");
+        sect.classList.toggle("light-mode");
+      });
+    });
+  }
 });
 
 //animation sections #ψολλεψτιον
