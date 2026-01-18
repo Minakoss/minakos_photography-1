@@ -388,3 +388,24 @@ document.addEventListener("DOMContentLoaded", function () {
   // Observe each grid item
   gridItems.forEach((item) => observer.observe(item));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cursor = document.getElementById("cursor-preview");
+  const targets = document.querySelectorAll(".cursor-preview");
+
+  // Ακολουθεί το mouse
+  window.addEventListener("mousemove", (e) => {
+    cursor.style.top = e.clientY + "px";
+    cursor.style.left = e.clientX + "px";
+  });
+
+  targets.forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      cursor.classList.add("active");
+    });
+
+    el.addEventListener("mouseleave", () => {
+      cursor.classList.remove("active");
+    });
+  });
+});
