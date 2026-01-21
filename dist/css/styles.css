@@ -386,7 +386,9 @@ img {
 .testimonials {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 /* When the section is in view */
@@ -400,7 +402,9 @@ img {
 .testimonials .features__description {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 .testimonials .features__title.in-view,
@@ -483,7 +487,9 @@ img {
 #collection {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 /* When the section is in view */
@@ -497,7 +503,9 @@ img {
 #collection .features__description {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 #collection .features__title.in-view,
@@ -524,7 +532,9 @@ img {
 .features__grid-item {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Increase duration */
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out; /* Increase duration */
 }
 
 /* When the grid item is in view */
@@ -760,7 +770,9 @@ img {
 .details {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 /* When the section is in view */
@@ -773,7 +785,9 @@ img {
 .details__grid-content {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 .details__grid-content.in-view {
@@ -1783,7 +1797,8 @@ html {
 
 .highlight-text {
   color: var(--primary-color); /* Set a bright color */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0),
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0),
     0 0 20px rgba(255, 255, 255, 0.4);
   font-size: 1.2em;
 }
@@ -1956,7 +1971,9 @@ h2 {
   pointer-events: none;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.8);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
   z-index: 9999;
 }
 
@@ -1969,4 +1986,35 @@ h2 {
 /* Optional: πιο cinematic */
 .cursor-preview {
   cursor: none;
+}
+
+/* Γραμματοσειρα στο navbar */
+.navbar__menu-link {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.navbar__mobile-menu-link {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+.navbar__menu-link {
+  position: relative;
+}
+
+.navbar__menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.navbar__menu-link:hover::after {
+  width: 100%;
 }
